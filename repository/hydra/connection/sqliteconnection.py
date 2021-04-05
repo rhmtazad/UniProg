@@ -1,5 +1,5 @@
 import sqlite3
-from .file import File
+from .file.file import File
 from .abstractconnection import AbstractConnection
 
 

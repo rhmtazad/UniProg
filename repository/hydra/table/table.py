@@ -1,4 +1,4 @@
-from .table.sqlitetable import SQLiteTable
+from .sqlitetable import SQLiteTable
 
 
 class Table:

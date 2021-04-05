@@ -1,4 +1,4 @@
-from .column.sqlitecolumn import SQLiteColumn
+from .sqlitecolumn import SQLiteColumn
 
 
 class Column:

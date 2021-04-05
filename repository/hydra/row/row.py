@@ -1,4 +1,4 @@
-from .row.sqliterow import SQLiteRow
+from .sqliterow import SQLiteRow
 
 
 class Row:

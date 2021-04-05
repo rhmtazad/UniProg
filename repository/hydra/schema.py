@@ -1,8 +1,8 @@
-from hydra.column import Column
-from hydra.connection import Connection
-from hydra.database import Database
-from hydra.row import Row
-from hydra.table import Table
+from .column import Column
+from .connection import Connection
+from .database import Database
+from .row import Row
+from .table import Table
 
 
 class Schema:

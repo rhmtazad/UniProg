@@ -1,4 +1,4 @@
-from .connection.sqliteconnection import SQLiteConnection
+from .sqliteconnection import SQLiteConnection
 
 
 class Connection:
