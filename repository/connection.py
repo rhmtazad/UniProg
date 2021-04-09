@@ -1,9 +1,8 @@
 import sqlite3
-from .file.file import File
-from .abstractconnection import AbstractConnection
+from .file import File
 
 
-class SQLiteConnection(AbstractConnection):
+class Connection:
     def __init__(self, name=None, location=None):
         """
         Connect to the database file using a given name and location.
@@ -15,7 +14,7 @@ class SQLiteConnection(AbstractConnection):
             it will create it.
 
         Examples:
-            >>> self.conn = SQLiteConnection('name', 'location')
+            >>> self.conn = Connection('name', 'location')
 
         Args:
             name (str, optional): Connect to the file with this name.

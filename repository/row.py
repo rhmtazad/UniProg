@@ -1,7 +1,4 @@
-from .abstractrow import AbstractRow
-
-
-class SQLiteRow(AbstractRow):
+class Row:
     def __init__(self, connection):
         """
         Insert, delete, modify, or retrieve a row.
@@ -12,7 +9,7 @@ class SQLiteRow(AbstractRow):
             pass the connection object as a parameter.
 
         Examples:
-            >>> self.row = SQLiteRow('pass connection obj')
+            >>> self.row = Row('pass connection obj')
 
         Args:
             connection (:obj:`Connection`): Connect to the database.
@@ -154,38 +151,6 @@ class SQLiteRow(AbstractRow):
         # execute the query
         self.__con.execute(query)
 
-    def fetch(self, table, row_id):
-        """
-        Fetch a row from a table.
-
-        Note:
-            Pass the table name in the first parameter,
-            and the primary key in the second parameter.
-
-        Examples:
-            >>> print(self.fetch('tbl', 1, 'col1', 'col2'))
-
-        Args:
-            table (str): Fetch cells from this table.
-            row_id (int): Fetch cells with this primary key.
-
-        Returns:
-            Returns the fetch result after executing the query.
-        """
-
-        # structure for the primary key
-        primary_key = f'{table}_id'
-
-        # query for fetching a row from a table
-        query = f'''
-            SELECT *
-            FROM {table}
-            WHERE {primary_key} = {row_id}
-        '''
-
-        # return the fetch result after executing the query
-        return self.__con.fetch(query)[0]
-
     def filter(self, table, row_id, *columns):
         """
         Fetch specific cells within a row
@@ -217,6 +182,38 @@ class SQLiteRow(AbstractRow):
         # query for fetching one or more cells from a table
         query = f'''
             SELECT {columns}
+            FROM {table}
+            WHERE {primary_key} = {row_id}
+        '''
+
+        # return the fetch result after executing the query
+        return self.__con.fetch(query)[0]
+
+    def fetch(self, table, row_id):
+        """
+        Fetch a row from a table.
+
+        Note:
+            Pass the table name in the first parameter,
+            and the primary key in the second parameter.
+
+        Examples:
+            >>> print(self.fetch('tbl', 1, 'col1', 'col2'))
+
+        Args:
+            table (str): Fetch cells from this table.
+            row_id (int): Fetch cells with this primary key.
+
+        Returns:
+            Returns the fetch result after executing the query.
+        """
+
+        # structure for the primary key
+        primary_key = f'{table}_id'
+
+        # query for fetching a row from a table
+        query = f'''
+            SELECT *
             FROM {table}
             WHERE {primary_key} = {row_id}
         '''
