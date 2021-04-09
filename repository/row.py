@@ -151,47 +151,7 @@ class Row:
         # execute the query
         self.__con.execute(query)
 
-    def fetch(self, table, **col_val):
-        """
-        Fetch rows for columns with the given values.
-
-        Note:
-            Pass the table name in the first parameter and the
-            columns along with their values in the other parameters.
-            The function return the rows based on the columns
-            that have the given values.
-
-        Examples:
-            >>> print(self.fetch('tbl', col1='val1', col2='val2'))
-
-        Args:
-            table (str): Fetch rows from this table.
-            **col_val (:obj:`kwargs`): Fetch rows based on columns and values
-
-
-        Keyword Args:
-            **col_val (:obj:`kwargs`): The first part in key=val represents
-                the column name and the second part represents the value for
-                that column.
-
-        Returns:
-            Returns the rows after executing the query.
-        """
-
-        # store column in (val) conditions for query
-        # join the columns along with their values and
-        # remove the last extra 'AND' word by using .rsplit(' ', 2)[0]
-        col_in_val = str(
-            "".join(f"{col} IN ('{val}') AND " for (col, val) in col_val.items())
-        ).rsplit(' ', 2)[0]
-
-        # query for fetching rows based on column's value
-        query = f'SELECT * FROM {table} WHERE {col_in_val}'
-
-        # execute the query and return the result
-        return self.__con.fetch(query)
-
-    def fetch_cells(self, table, row_id, *columns):
+    def filter(self, table, row_id, *columns):
         """
         Fetch specific cells within a row
 
@@ -202,7 +162,7 @@ class Row:
             parameter.
 
         Examples:
-            >>> print(self.fetch_cells('tbl', 1, 'col1', 'col2'))
+            >>> print(self.filter('tbl', 1, 'col1', 'col2'))
 
         Args:
             table (str): Fetch cells from this table.
@@ -227,7 +187,61 @@ class Row:
         '''
 
         # return the fetch result after executing the query
-        return self.__con.fetch(query)
+        return self.__con.fetch(query)[0]
+
+    def fetch(self, table, row_id):
+        """
+        Fetch a row from a table.
+
+        Note:
+            Pass the table name in the first parameter,
+            and the primary key in the second parameter.
+
+        Examples:
+            >>> print(self.fetch('tbl', 1, 'col1', 'col2'))
+
+        Args:
+            table (str): Fetch cells from this table.
+            row_id (int): Fetch cells with this primary key.
+
+        Returns:
+            Returns the fetch result after executing the query.
+        """
+
+        # structure for the primary key
+        primary_key = f'{table}_id'
+
+        # query for fetching a row from a table
+        query = f'''
+            SELECT *
+            FROM {table}
+            WHERE {primary_key} = {row_id}
+        '''
+
+        # return the fetch result after executing the query
+        return self.__con.fetch(query)[0]
+
+    def cell(self, table, row_id, column):
+        """
+        Fetch a specific cell within a row from a table.
+
+        Note:
+            Pass the table name in the first parameter and the
+            row_id in the second parameter. Also, pass the column
+            name for the desired cell in the third parameter.
+
+        Examples:
+            >>> self.cell(table='tbl', row_id=1, column='col')
+
+        Args:
+            table (str): Fetch a cell from this table.
+            row_id (int): Fetch a cell from this row.
+            column (str): Fetch a cell from this column.
+
+        Returns:
+            Returns a cell from a table.
+        """
+        return self.filter(table, row_id, column)[column]
 
     def count(self, table, **col_val):
         """
@@ -240,7 +254,7 @@ class Row:
             that have the given values.
 
         Examples:
-            >>> print(self.courses_count('tbl', col1='val1', col2='val2'))
+            >>> print(self.count('tbl', col1='val1', col2='val2'))
 
         Args:
             table (str): Count rows from this table.
@@ -267,4 +281,4 @@ class Row:
         query = f'SELECT COUNT(*) FROM {table} WHERE {col_in_val}'
 
         # return the number of rows after executing the query
-        return str(self.__con.fetch(query))[2:-3]
+        return self.__con.fetch(query)[0]['COUNT(*)']

@@ -73,6 +73,18 @@ class Connection:
 
         # use context manager for connection
         with sqlite3.connect(self.__db_file) as con:
+
+            # to return the fetch result as dictionary
+            def dict_factory(cur, row):
+                d = {}
+                for idx, col in enumerate(cur.description):
+                    d[col[0]] = row[idx]
+                return d
+
+            # use dict_factory for row_factory
+            # it will return dictionaries for fetch results
+            con.row_factory = dict_factory
+
             # get the cursor from the connection
             cursor = con.cursor()
 

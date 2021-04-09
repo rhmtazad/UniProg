@@ -72,7 +72,6 @@ class Column:
 
                 # execute the query
                 self.__con.execute(query)
-                # print(query)
 
     def add_fk(self, table, column, reference_tbl, reference_col):
         """
@@ -189,4 +188,44 @@ class Column:
         '''
 
         # return the column names after executing the query
-        return [i[1] for i in self.__con.fetch(query)]
+        return [column['name'] for column in self.__con.fetch(query)]
+
+    def filter(self, table, **col_val):
+        """
+        Fetch and filter columns with the given values.
+
+        Note:
+            Pass the table name in the first parameter and the
+            columns along with their values in the other parameters.
+            The function return the rows based on the columns
+            that have the given values.
+
+        Examples:
+            >>> print(self.filter('tbl', col1='val1', col2='val2'))
+
+        Args:
+            table (str): Fetch from this table.
+            **col_val (:obj:`kwargs`): Fetch based on columns and values
+
+
+        Keyword Args:
+            **col_val (:obj:`kwargs`): The first part in key=val represents
+                the column name and the second part represents the value for
+                that column.
+
+        Returns:
+            Returns the rows and columns after executing the query.
+        """
+
+        # store column in (val) conditions for query
+        # join the columns along with their values and
+        # remove the last extra 'AND' word by using .rsplit(' ', 2)[0]
+        col_in_val = str(
+            "".join(f"{col} IN ('{val}') AND " for (col, val) in col_val.items())
+        ).rsplit(' ', 2)[0]
+
+        # query for fetching rows based on column's value
+        query = f'SELECT * FROM {table} WHERE {col_in_val}'
+
+        # execute the query and return the result
+        return self.__con.fetch(query)
