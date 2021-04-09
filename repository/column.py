@@ -1,7 +1,4 @@
-from .abstractcolumn import AbstractColumn
-
-
-class SQLiteColumn(AbstractColumn):
+class Column:
     def __init__(self, connection):
         """
         Add, drop, modify, or retrieve a column.
@@ -12,7 +9,7 @@ class SQLiteColumn(AbstractColumn):
             pass the connection object as a parameter.
 
         Examples:
-            >>> self.col = SQLiteColumn('pass the connection obj')
+            >>> self.col = Column('pass the connection obj')
 
         Args:
             connection (:obj:`Connection`): Connect to the database.

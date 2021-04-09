@@ -1,7 +1,4 @@
-from .abstractdatabase import AbstractDatabase
-
-
-class SQLiteDatabase(AbstractDatabase):
+class Database:
     def __init__(self, connection, table):
         """
         Create a database with a given name and location.
@@ -16,8 +13,8 @@ class SQLiteDatabase(AbstractDatabase):
             created with 'main' name.
 
         Examples:
-            >>> self.__degree_plan = SQLiteDatabase('name', 'directory...')
-            >>> self.__degree_plan = SQLiteDatabase() # or empty parameters
+            >>> self.__db = Database('name', 'directory...')
+            >>> self.__db = Database() # or empty parameters
 
         Args:
             connection (:obj:`Connection`): Create the database using this
