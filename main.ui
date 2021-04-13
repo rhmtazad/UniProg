@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1215</width>
-    <height>665</height>
+    <width>1219</width>
+    <height>671</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -44,8 +44,9 @@ Line {
 }
 
 #window {
+	border: 1px solid #ccc;
 	border-radius: 15px;
-	background: #bbb;
+	background: white;
 }
 
 #titlebar {
@@ -132,6 +133,18 @@ QLineEdit {
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1219</width>
+     <height>671</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1219</width>
+     <height>671</height>
+    </size>
+   </property>
    <widget class="QFrame" name="window">
     <property name="geometry">
      <rect>
@@ -149,8 +162,8 @@ QLineEdit {
     </property>
     <property name="minimumSize">
      <size>
-      <width>0</width>
-      <height>0</height>
+      <width>1200</width>
+      <height>650</height>
      </size>
     </property>
     <property name="maximumSize">
@@ -168,10 +181,10 @@ QLineEdit {
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>1197</width>
-       <height>646</height>
+       <x>1</x>
+       <y>1</y>
+       <width>1198</width>
+       <height>648</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="elements" rowstretch="2,20" columnstretch="2,20">
@@ -606,8 +619,8 @@ QLineEdit {
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1085</width>
-           <height>586</height>
+           <width>1087</width>
+           <height>591</height>
           </rect>
          </property>
          <property name="styleSheet">
