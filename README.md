@@ -1,10 +1,10 @@
 ## UniProg v3.1.1
 
-[![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog)
-[![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog)
-[![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/)
-[![language - python](https://img.shields.io/badge/language-python-81c253?color=mediumseagreen&logo=python&logoColor=white)](https://www.python.org/)
-[![license - MIT](https://img.shields.io/badge/license-MIT-beige)](https://opensource.org/licenses/MIT)
+[![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
+[![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
+[![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
+[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org) 
+[![license - MIT](https://img.shields.io/badge/license-MIT-beige)](https://opensource.org/licenses/MIT) 
 
 #### A GUI Toolkit for Students to Manage their Degree Plan and Courses
 
