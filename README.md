@@ -1,4 +1,4 @@
-## UniProg
+## UniProg — An Easy-to-Use Tool for Students to Manage Their Degree Plan
 ---------------------------------------------------------------------------------------------------------
   
 Software Engineering Scrum Project
@@ -12,18 +12,20 @@ Software Engineering Scrum Project
 
 ---------------------------------------------------------------------------------------------------------
 
-## Features
-* a user friendly environment 
-* this project has all the necesary documentation for new user to start theri work
-* UI is designed in pyqt5
+This project is originally developed for our Software Engineering Course (ITC 315) project to practice the software development life-cycle, 
+software development practices, and different but related methodologies. The Scrum model suggests that projects progress via a series of sprints. 
+In keeping with an agile methodology, sprints are timeboxed to no more than a month long, most commonly two weeks.  
 
-## Documentation
+Scrum methodology advocates for a planning meeting at the start of the sprint, where team members figure out how many items they can commit to, 
+and then create a sprint backlog – a list of the tasks to perform during the sprint.
 
-this project has a documentation file. This
-documentation contains all the necesary informatiion about the project. like 
+----------------------------------------------------------------------------------------------
+
+
 explanation of codes, how to run the project and what should user do for further development.
 
-## Contributors
+## Member:
+
 * Rahmat Azad
 * Mohammad Sulayman Rezaie
 * Nasrin Natiqi
