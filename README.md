@@ -24,11 +24,11 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 
 explanation of codes, how to run the project and what should user do for further development.
 
-## Member:
+## Project Members and Contributors:
 
-* Rahmat Azad
-* Mohammad Sulayman Rezaie
-* Nasrin Natiqi
-* Sajjad Afzali
-* Fatema Qambary
-* Tasal Sahibzadah
+- Rahmat Azad
+- Mohammad Sulayman Rezaie
+- Nasrin Natiqi
+- Sajjad Afzali
+- Fatema Qambary
+- Tasal Sahibzadah
