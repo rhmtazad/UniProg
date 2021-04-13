@@ -1,4 +1,4 @@
-## UniProg v.1.1.3 | Scrum Project
+### UniProg v.1.1.3 | Scrum Project
 #### An Easy-to-Use Tool for Students to Manage Their Degree Plan
 
 <hr style="border:1px solid #eee"> </hr>
@@ -20,7 +20,7 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 
 <hr style="border:1px solid #eee"> </hr>
 
-## Project Members and Contributors:
+### Project Members and Contributors:
 
 <hr style="border:1px solid #eee"> </hr>
 
