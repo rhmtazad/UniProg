@@ -21,13 +21,13 @@ where team members figure out how many items they can commit to,
 and then create a sprint backlog – a list of the tasks to perform during the sprint.  
 ```
 
-## Requirements
+### Requirements
 
 **To use this software you must have installed:**
 - [Python 3.9] - Latest version of Python
 - [SQLite3] - Latest version of SQLite3
 
-## Installation
+### Installation
 
 **After finishing this project a single-executable file will be realease**
 
@@ -35,11 +35,11 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 This part is intentionally left black...
 ```
 
-## Scrum Master and Product Ownner
+### Scrum Master and Product Ownner
 - Fatema Qambari (Product Owner)
 - Nasrin Natiqi  (Scrum Master)
 
-## Developer Team
+### Developer Team
 - Rahamt Azad
 - Mohammad Sulayman Rezaie
 - Sajjad Afzali
