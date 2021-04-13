@@ -1,29 +1,21 @@
 import sys
 
-from PyQt5 import QtWidgets
-from PyQt5.uic import loadUiType
+from PyQt5 import uic
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
-main_window, _ = loadUiType('main.ui')
 
-
-class MainApp(QtWidgets.QMainWindow, main_window):
+class UserInterface(QMainWindow):
     def __init__(self):
-        QtWidgets.QMainWindow.__init__(self)
-        self.setupUi(self)
+        super(UserInterface, self).__init__()
+        self.setWindowFlags(self.windowFlags() | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
+        uic.loadUi('main.ui', self)
 
-    def center_window(self):
-        frame_geometry = self.frameGeometry()
-        center_point = QtWidgets.QDesktopWidget().availableGeometry().center()
-        frame_geometry.moveCenter(center_point)
-        self.move(frame_geometry.topLeft())
+        self.show()
 
 
-def main():
-    app = QtWidgets.QApplication(sys.argv)
-    window = MainApp()
-    window.show()
-    app.exec_()
-
-
-if __name__ == '__main__':
-    main()
+app = QApplication(sys.argv)
+user_interface = UserInterface()
+app.exec()
