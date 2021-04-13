@@ -10,17 +10,18 @@
 
 ----------------------------------------------------------------------------------------------
 
-his project is originally developed for our Software Engineering 
-Course (ITC 315) project to practice the software development life-cycle, 
-software development practices, and different but related methodologies. 
-The Scrum model suggests that projects progress via a series of sprints. 
-In keeping with an agile methodology, sprints are timeboxed to no more 
-than a month long, most commonly two weeks.  
+```
+This project is originally developed for our Software Engineering Course.
+The intention of this project to practice the software development life-cycle, software development 
+practices, and different but related methodologies. 
+The Scrum model suggests that projects progress via a series of sprints.  
+In keeping with an agile methodology, sprints are timeboxed to 
+no more than a month long, most commonly two weeks.
 
-Scrum methodology advocates for a planning meeting at the start of the sprint, 
+Scrum methodology advocates for a planning meeting at the start of the sprint,
 where team members figure out how many items they can commit to, 
-and then create a sprint backlog – a list of the tasks to perform during the sprint.
-
+and then create a sprint backlog – a list of the tasks to perform during the sprint.  
+```
 ----------------------------------------------------------------------------------------------
 
 ## Requirements
