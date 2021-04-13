@@ -32,7 +32,7 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 **After finishing this project a single-executable file will be realease**
 
 ```
-This part is intentionally left black...
+This part is intentionally left blank...
 ```
 
 ## Scrum Master and Product Ownner
