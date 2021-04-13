@@ -4,7 +4,7 @@
 [![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 [![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org) 
-[![license - MIT](https://img.shields.io/badge/license-MIT-beige)](https://opensource.org/licenses/MIT) 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
 #### A GUI Toolkit for Students to Manage their Degree Plan and Courses
 
