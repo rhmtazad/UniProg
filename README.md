@@ -6,7 +6,7 @@
 [![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 [![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 
-#### A GUI Toolkit for Students to Manage their Degree Plan and Courses
+### A GUI Tool Kit for Students to Manage their Degree Plan and Courses
 
 ```
 This project is originally developed for our Software Engineering Course.
