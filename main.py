@@ -11,7 +11,7 @@ class UserInterface(QMainWindow):
         super(UserInterface, self).__init__()
         self.setWindowFlags(self.windowFlags() | Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
-        uic.loadUi('main.ui', self)
+        uic.loadUi('ui/main.ui', self)
         self.center_window()
 
     def center_window(self):
