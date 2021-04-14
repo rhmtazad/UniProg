@@ -35,7 +35,7 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 This part is intentionally left blank...
 ```
 
-## Scrum Master and Product Ownner
+## Scrum Master and Product Owner
 
 - Fatema Qambari (Product Owner)
 - Nasrin Natiqi  (Scrum Master)
