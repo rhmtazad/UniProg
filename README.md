@@ -22,6 +22,19 @@ where team members figure out how many items they can commit to,
 and then create a sprint backlog – a list of the tasks to perform during the sprint.  
 ___  
 
+
+## Scrum Master and Product Owner
+
+- Fatema Qambari (Product Owner)
+- Nasrin Natiqi  (Scrum Master)
+
+## Developer Team
+
+- Rahmat Azad
+- Mohammad Sulayman Rezaie
+- Sajjad Afzali
+- Tasal Sahibzadah
+
 ## User Interface Preview
 
 ### Dahboard  
@@ -251,16 +264,3 @@ student
   </tbody>
 </table>
 </div>
-
-
-## Scrum Master and Product Owner
-
-- Fatema Qambari (Product Owner)
-- Nasrin Natiqi  (Scrum Master)
-
-## Developer Team
-
-- Rahmat Azad
-- Mohammad Sulayman Rezaie
-- Sajjad Afzali
-- Tasal Sahibzadah
