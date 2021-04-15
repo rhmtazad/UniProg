@@ -22,6 +22,20 @@ where team members figure out how many items they can commit to,
 and then create a sprint backlog – a list of the tasks to perform during the sprint.  
 ___  
 
+## User Interface Preview
+
+### Dahboard  
+![Alt text](/screenshots/dashboard.JPG?raw=true "Dashboard")  
+
+
+### Degree Plan Portal  
+![Alt text](/screenshots/degreeplan.JPG?raw=true "Degree Plan")  
+
+
+### Account Portal  
+![Alt text](/screenshots/account.JPG?raw=true "Account")  
+
+
 ## Requirements
 
 **To use this software you must have installed:**
