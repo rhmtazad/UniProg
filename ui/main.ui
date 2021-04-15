@@ -102,7 +102,9 @@ Line {
 #account_page_credential,
 #account_page_advisor,
 #account_page_config,
-#courses_page_config
+#courses_page_config,
+#course_input,
+#course_preview
 {
 	border-radius: 15px;
 	background: white;
@@ -132,6 +134,12 @@ QLineEdit {
 	padding: 0 15px;
 	border-radius: 15px;
 	border: 1px solid #ddd;
+}
+
+#course_add_modify_options
+{
+border: none;
+background-color: transparent;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -632,7 +640,7 @@ QLineEdit {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
@@ -1523,7 +1531,7 @@ QLineEdit {
            <property name="geometry">
             <rect>
              <x>32</x>
-             <y>25</y>
+             <y>30</y>
              <width>470</width>
              <height>221</height>
             </rect>
@@ -1693,9 +1701,9 @@ QLineEdit {
            <property name="geometry">
             <rect>
              <x>32</x>
-             <y>270</y>
+             <y>275</y>
              <width>470</width>
-             <height>286</height>
+             <height>281</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -1713,7 +1721,7 @@ QLineEdit {
               <x>10</x>
               <y>10</y>
               <width>453</width>
-              <height>266</height>
+              <height>261</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_11">
@@ -1735,20 +1743,17 @@ QLineEdit {
              <property name="verticalSpacing">
               <number>10</number>
              </property>
-             <item row="8" column="2">
-              <widget class="QLabel" name="user_sum_concentration_34">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
+             <item row="0" column="0" colspan="3">
+              <widget class="QLabel" name="user_sum_fullname_10">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
                </property>
                <property name="text">
-                <string>120</string>
+                <string>Total Courses and Credits by Category</string>
                </property>
               </widget>
              </item>
-             <item row="10" column="2">
+             <item row="8" column="2">
               <widget class="QLabel" name="user_sum_concentration_35">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -1768,29 +1773,6 @@ QLineEdit {
                </property>
               </widget>
              </item>
-             <item row="0" column="0" colspan="3">
-              <widget class="QLabel" name="user_sum_fullname_10">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Total Courses and Credits by Category</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_concentration_27">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Selective</string>
-               </property>
-              </widget>
-             </item>
              <item row="4" column="0">
               <widget class="QLabel" name="user_sum_concentration_25">
                <property name="sizePolicy">
@@ -1804,32 +1786,6 @@ QLineEdit {
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLabel" name="user_sum_concentration_30">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>120</string>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="0">
-              <widget class="QLabel" name="user_sum_concentration_28">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Concentration</string>
-               </property>
-              </widget>
-             </item>
              <item row="6" column="0">
               <widget class="QLabel" name="user_sum_concentration_26">
                <property name="sizePolicy">
@@ -1840,6 +1796,19 @@ QLineEdit {
                </property>
                <property name="text">
                 <string>Core</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="user_sum_concentration_28">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Concentration</string>
                </property>
               </widget>
              </item>
@@ -1889,7 +1858,20 @@ QLineEdit {
                </property>
               </widget>
              </item>
-             <item row="10" column="1">
+             <item row="2" column="1">
+              <widget class="QLabel" name="user_sum_major_64">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Courses</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
               <widget class="QLabel" name="user_sum_concentration_31">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -1928,16 +1910,10 @@ QLineEdit {
                </property>
               </widget>
              </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_64">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Courses</string>
+             <item row="5" column="0" colspan="3">
+              <widget class="Line" name="line_27">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
@@ -1954,22 +1930,8 @@ QLineEdit {
                </property>
               </widget>
              </item>
-             <item row="5" column="0" colspan="3">
-              <widget class="Line" name="line_27">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
              <item row="7" column="0" colspan="3">
               <widget class="Line" name="line_31">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="0" colspan="3">
-              <widget class="Line" name="line_32">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
@@ -2224,13 +2186,13 @@ QLineEdit {
           </widget>
          </widget>
          <widget class="QWidget" name="courses_page">
-          <widget class="QFrame" name="courses_page_config">
+          <widget class="QFrame" name="course_input">
            <property name="geometry">
             <rect>
-             <x>538</x>
-             <y>25</y>
-             <width>523</width>
-             <height>526</height>
+             <x>31</x>
+             <y>30</y>
+             <width>1026</width>
+             <height>171</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -2242,228 +2204,499 @@ QLineEdit {
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget_7">
+           <widget class="QWidget" name="layoutWidget_11">
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>20</y>
-              <width>481</width>
-              <height>486</height>
+              <y>10</y>
+              <width>986</width>
+              <height>151</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="account_page_config_container_2" stretch="0,0,2,0,20">
-             <property name="spacing">
+            <layout class="QGridLayout" name="course_input_container" rowstretch="10,0,9,9" columnstretch="11,11,11,0,5">
+             <property name="leftMargin">
               <number>10</number>
              </property>
              <property name="topMargin">
               <number>5</number>
              </property>
-             <property name="bottomMargin">
-              <number>0</number>
+             <property name="rightMargin">
+              <number>10</number>
              </property>
-             <item>
-              <widget class="QLabel" name="config_account_title_2">
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="3" column="2">
+              <widget class="QLineEdit" name="course_input_credits">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Credits</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QPushButton" name="course_input_save">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QPushButton" name="course_input_reset">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reset</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLineEdit" name="course_input_grade">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Grade</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLineEdit" name="course_input_ID">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>ID</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="course_input_taken_status">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Taken Status (True/False)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="course_input_name">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLineEdit" name="course_input_category">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3" rowspan="2">
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="5">
+              <widget class="QLabel" name="course_input_title">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
                </property>
                <property name="text">
-                <string>Configure Your Courses</string>
+                <string>Add Courses</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="config_account_line1_2">
+             <item row="1" column="0" colspan="5">
+              <widget class="Line" name="line_13">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="config_account_guide_2">
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="course_preview">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>230</y>
+             <width>1026</width>
+             <height>331</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget_16">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>986</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="course_modify_container" rowstretch="2,0,2,0,10" columnstretch="14,0,3,3,3">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="0" column="2" colspan="3">
+              <widget class="QLabel" name="course_modify_subtitle">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
                <property name="text">
-                <string>Insert the data that you want to change about your Courses</string>
+                <string>Double click on a cell to modify or select to delete a course</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="config_account_line2_2">
+             <item row="2" column="0">
+              <widget class="QLineEdit" name="course_modify_search">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Insert a value to search</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="course_modify_title">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Edit/Delete Courses</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="5">
+              <widget class="Line" name="line_21">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <layout class="QGridLayout" name="account_page_config_input_container_2">
-               <property name="topMargin">
-                <number>15</number>
+             <item row="4" column="0" colspan="5">
+              <widget class="QTableWidget" name="course_modify_table">
+               <property name="styleSheet">
+                <string notr="true"/>
                </property>
-               <property name="rightMargin">
-                <number>0</number>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
                </property>
-               <property name="bottomMargin">
-                <number>5</number>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
                </property>
-               <property name="horizontalSpacing">
-                <number>15</number>
+               <property name="sizeAdjustPolicy">
+                <enum>QAbstractScrollArea::AdjustToContents</enum>
                </property>
-               <property name="verticalSpacing">
+               <property name="editTriggers">
+                <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+               </property>
+               <property name="showGrid">
+                <bool>true</bool>
+               </property>
+               <property name="gridStyle">
+                <enum>Qt::DotLine</enum>
+               </property>
+               <property name="cornerButtonEnabled">
+                <bool>false</bool>
+               </property>
+               <attribute name="horizontalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>155</number>
+               </attribute>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderDefaultSectionSize">
+                <number>35</number>
+               </attribute>
+               <attribute name="verticalHeaderHighlightSections">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderMinimumSectionSize">
                 <number>30</number>
-               </property>
-               <item row="3" column="1">
-                <widget class="QLineEdit" name="config_account_advisor_email_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Advisor Email</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLineEdit" name="config_account_advisor_name_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Advisor Name</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="0">
-                <widget class="QLineEdit" name="config_account_email_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Credits</string>
-                 </property>
-                </widget>
+               </attribute>
+               <attribute name="verticalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>ID</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Category</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Grade</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Taken Status</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Credits</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string/>
+                </property>
                </item>
                <item row="0" column="1">
-                <widget class="QLineEdit" name="config_account_lastname_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Category</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string/>
+                </property>
                </item>
-               <item row="4" column="0">
-                <widget class="QPushButton" name="config_account_reset_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Reset</string>
-                 </property>
-                </widget>
+               <item row="0" column="2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="flags">
+                 <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                </property>
                </item>
-               <item row="2" column="1">
-                <widget class="QLineEdit" name="config_account_password_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Password</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLineEdit" name="config_account_name_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Name</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="1">
-                <widget class="QPushButton" name="config_account_save_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Save</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="config_account_username_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Grade</string>
-                 </property>
-                </widget>
+               <item row="1" column="0">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="flags">
+                 <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                </property>
                </item>
                <item row="2" column="0">
-                <widget class="QLineEdit" name="config_account_phone_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Completed/Incomplete</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string/>
+                </property>
                </item>
-              </layout>
+               <item row="3" column="0">
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="course_modify_reset">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Reset</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QPushButton" name="course_modify_save">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QPushButton" name="course_modify_delete">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Delete</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" rowspan="3">
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2" colspan="3">
+              <widget class="Line" name="line_14">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
              </item>
             </layout>
            </widget>
