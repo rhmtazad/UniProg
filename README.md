@@ -25,15 +25,15 @@ ___
 ## User Interface Preview
 
 ### Dahboard  
-![Alt text](/screenshots/dashboard.JPG?raw=true "Dashboard")  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.JPG"/>  
 
 
 ### Degree Plan Portal  
-![Alt text](/screenshots/degreeplan.JPG?raw=true "Degree Plan")  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.JPG"/>  
 
 
 ### Account Portal  
-![Alt text](/screenshots/account.JPG?raw=true "Account")  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.JPG"/>  
 
 
 ## Requirements
