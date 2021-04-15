@@ -50,7 +50,7 @@ ___
 
 
 ### Courses Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/>  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.JPG"/>  
 
 
 ## Requirements
