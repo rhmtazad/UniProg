@@ -35,7 +35,7 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 This part is intentionally left blank...
 ```
 
-## How to Use Jupyter Notebook for Data Management
+## How to Use Jupyter Notebook
 
 ```python
 import pandas as pd
@@ -278,7 +278,6 @@ courses.read()
 
 
 
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -340,7 +339,6 @@ courses.read()
   </tbody>
 </table>
 </div>
-
 
 
 
