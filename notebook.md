@@ -19,7 +19,7 @@ course_data = [
     'Concentration',
     3,
     'True',
-    'B+'
+    'A'
 ]
 ```
 
@@ -100,7 +100,7 @@ class UniProgCSV:
 
 
 ```python
-courses = UniProgCSV(course_columns, 'id', 'courses')
+courses = UniProgCSV(columns=course_columns, index='id', file='courses')
 ```
 
 
@@ -211,70 +211,6 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
       <td>B+</td>
     </tr>
     <tr>
@@ -283,7 +219,7 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
   </tbody>
 </table>
@@ -344,70 +280,6 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
       <td>B+</td>
     </tr>
     <tr>
@@ -416,7 +288,7 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
     <tr>
       <th>ITC 315</th>
@@ -424,16 +296,10 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+

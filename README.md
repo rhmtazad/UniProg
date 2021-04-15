@@ -41,6 +41,7 @@ This part is intentionally left blank...
 import pandas as pd
 ```
 
+
 ```python
 course_columns = [
     'id',
@@ -57,9 +58,10 @@ course_data = [
     'Concentration',
     3,
     'True',
-    'B+'
+    'A'
 ]
 ```
+
 
 ```python
 degreeplan_columns = [
@@ -137,17 +139,28 @@ class UniProgCSV:
 
 
 ```python
-courses = UniProgCSV(course_columns, 'id', 'courses')
+courses = UniProgCSV(columns=course_columns, index='id', file='courses')
 ```
+
 
 ```python
 courses.columns
 ```
+
+
+
+
     ['id', 'name', 'category', 'credits', 'taken', 'grade']
+
+
+
 
 ```python
 courses.columns_df
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -162,7 +175,6 @@ courses.columns_df
     .dataframe thead th {
         text-align: right;
     }
-
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -187,12 +199,17 @@ courses.columns_df
   </tbody>
 </table>
 </div>
+
+
 
 
 ```python
 courses.read()
 ```
 
+
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -206,7 +223,6 @@ courses.read()
     .dataframe thead th {
         text-align: right;
     }
-
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -234,70 +250,6 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
       <td>B+</td>
     </tr>
     <tr>
@@ -306,11 +258,13 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
 
 
 ```python
@@ -322,6 +276,9 @@ courses.append(course_data)
 courses.read()
 ```
 
+
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -362,70 +319,6 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
       <td>B+</td>
     </tr>
     <tr>
@@ -434,7 +327,7 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
     <tr>
       <th>ITC 315</th>
@@ -442,19 +335,14 @@ courses.read()
       <td>Concentration</td>
       <td>3</td>
       <td>True</td>
-      <td>B+</td>
-    </tr>
-    <tr>
-      <th>ITC 315</th>
-      <td>Software Engineering</td>
-      <td>Concentration</td>
-      <td>3</td>
-      <td>True</td>
-      <td>B+</td>
+      <td>A</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
+
 
 ## Scrum Master and Product Owner
 
