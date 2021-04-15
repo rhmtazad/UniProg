@@ -110,11 +110,14 @@ student_data = [
 
 
 ```python
+from dataclasses import dataclass, field
+
+
+@dataclass(order=True)
 class UniProgCSV:
-    def __init__(self, columns, index, file):
-        self.columns = columns
-        self.index = index
-        self.file = file
+    index: str
+    file: str
+    columns: list[str] = field(default_factory=list)
 
     @property
     def columns_df(self):
@@ -135,6 +138,7 @@ class UniProgCSV:
 
     def append(self, data):
         self.save(self.read().append(self.data_df(data)))
+
 ```
 
 
@@ -159,7 +163,7 @@ courses.columns
 courses.columns_df
 ```
 
-<table border="1" class="dataframe">
+<table border="1">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -188,7 +192,7 @@ courses.columns_df
 courses.read()
 ```
 
-<table border="1" class="dataframe">
+<table border="1">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -224,11 +228,25 @@ courses.read()
       <td>True</td>
       <td>A</td>
     </tr>
+    <tr>
+      <th>ITC 315</th>
+      <td>Software Engineering</td>
+      <td>Concentration</td>
+      <td>3</td>
+      <td>True</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>ITC 315</th>
+      <td>Software Engineering</td>
+      <td>Concentration</td>
+      <td>3</td>
+      <td>True</td>
+      <td>A</td>
+    </tr>
   </tbody>
 </table>
 </div>
-
-
 
 
 ```python
@@ -240,7 +258,7 @@ courses.append(course_data)
 courses.read()
 ```
 
-<table border="1" class="dataframe">
+<table border="1">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -267,6 +285,22 @@ courses.read()
       <td>3</td>
       <td>True</td>
       <td>B+</td>
+    </tr>
+    <tr>
+      <th>ITC 315</th>
+      <td>Software Engineering</td>
+      <td>Concentration</td>
+      <td>3</td>
+      <td>True</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>ITC 315</th>
+      <td>Software Engineering</td>
+      <td>Concentration</td>
+      <td>3</td>
+      <td>True</td>
+      <td>A</td>
     </tr>
     <tr>
       <th>ITC 315</th>
