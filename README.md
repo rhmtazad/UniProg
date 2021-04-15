@@ -49,6 +49,10 @@ ___
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.JPG"/>  
 
 
+### Courses Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/>  
+
+
 ## Requirements
 
 **To use this software you must have installed:**
@@ -57,7 +61,7 @@ ___
 
 ## Installation
 
-**After finishing this project a single-executable file will be realease**
+**After finishing this project a single-executable file will be released**
 
 ```
 This part is intentionally left blank...
