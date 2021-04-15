@@ -29,7 +29,7 @@ and then create a sprint backlog – a list of the tasks to perform during the s
 
 ## Installation
 
-**After finishing this project a single-executable file will be realease**
+**After finishing this project a single-executable file will be released**
 
 ```
 This part is intentionally left blank...
