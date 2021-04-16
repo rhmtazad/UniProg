@@ -231,7 +231,7 @@ background-color: transparent;
           <item>
            <widget class="QLabel" name="version">
             <property name="text">
-             <string>v3.1.2</string>
+             <string>v1.1.2</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -640,18 +640,14 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-<<<<<<< HEAD
-          <number>1</number>
-=======
-          <number>0</number>
->>>>>>> upstream/main
+          <number>3</number>
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
            <property name="geometry">
             <rect>
-             <x>40</x>
-             <y>30</y>
+             <x>52</x>
+             <y>50</y>
              <width>470</width>
              <height>151</height>
             </rect>
@@ -768,8 +764,8 @@ background-color: transparent;
           <widget class="QFrame" name="courses_sum">
            <property name="geometry">
             <rect>
-             <x>40</x>
-             <y>230</y>
+             <x>52</x>
+             <y>225</y>
              <width>470</width>
              <height>311</height>
             </rect>
@@ -859,20 +855,10 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="0" column="0" colspan="4">
               <widget class="QLabel" name="user_sum_fullname_5">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
-=======
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_category">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
->>>>>>> upstream/main
                </property>
                <property name="text">
                 <string>Course Categories Summary</string>
@@ -895,13 +881,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="6" column="3">
               <widget class="QLabel" name="sum_core_cre">
-=======
-             <item row="2" column="2">
-              <widget class="QLabel" name="user_sum_remaining">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -952,13 +933,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="4" column="0">
               <widget class="QLabel" name="user_sum_concentration_7">
-=======
-             <item row="6" column="0">
-              <widget class="QLabel" name="user_sum_core">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -970,13 +946,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="10" column="2">
               <widget class="QLabel" name="sum_concent_rem">
-=======
-             <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_selective">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1050,13 +1021,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="6" column="1">
               <widget class="QLabel" name="sum_core_com">
-=======
-             <item row="10" column="0">
-              <widget class="QLabel" name="user_sum_concentration_7">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1087,13 +1053,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="10" column="1">
               <widget class="QLabel" name="sum_concent_com">
-=======
-             <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_general">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1131,13 +1092,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="8" column="0">
               <widget class="QLabel" name="user_sum_concentration_9">
-=======
-             <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_completed">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1149,13 +1105,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-<<<<<<< HEAD
              <item row="2" column="2">
               <widget class="QLabel" name="user_sum_major_22">
-=======
-             <item row="2" column="3">
-              <widget class="QLabel" name="user_sum_credits">
->>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1212,10 +1163,10 @@ background-color: transparent;
           <widget class="QFrame" name="degreeplan_sum">
            <property name="geometry">
             <rect>
-             <x>580</x>
-             <y>30</y>
+             <x>566</x>
+             <y>50</y>
              <width>470</width>
-             <height>151</height>
+             <height>136</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -1231,9 +1182,9 @@ background-color: transparent;
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>16</y>
+              <y>10</y>
               <width>451</width>
-              <height>121</height>
+              <height>117</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_3">
@@ -1330,10 +1281,10 @@ background-color: transparent;
           <widget class="QFrame" name="gpa_sum">
            <property name="geometry">
             <rect>
-             <x>580</x>
+             <x>566</x>
              <y>225</y>
              <width>470</width>
-             <height>151</height>
+             <height>136</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -1351,7 +1302,7 @@ background-color: transparent;
               <x>10</x>
               <y>10</y>
               <width>451</width>
-              <height>131</height>
+              <height>116</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
@@ -1454,10 +1405,10 @@ background-color: transparent;
           <widget class="QFrame" name="graduation_time">
            <property name="geometry">
             <rect>
-             <x>580</x>
+             <x>566</x>
              <y>400</y>
              <width>470</width>
-             <height>141</height>
+             <height>136</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -1475,7 +1426,7 @@ background-color: transparent;
               <x>10</x>
               <y>10</y>
               <width>451</width>
-              <height>121</height>
+              <height>116</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_5">
@@ -1659,7 +1610,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_courses">
+              <widget class="QLabel" name="user_sum_concentration_11">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                  <horstretch>0</horstretch>
