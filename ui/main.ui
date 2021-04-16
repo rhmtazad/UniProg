@@ -29,11 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-<<<<<<< HEAD
-   <string>UniProg v.1.1.0</string>
-=======
    <string>MainWindow</string>
->>>>>>> upstream/main
   </property>
   <property name="styleSheet">
    <string notr="true">* {
@@ -171,50 +167,11 @@ background-color: transparent;
       <height>650</height>
      </rect>
     </property>
-<<<<<<< HEAD
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>12</pointsize>
-      <weight>3</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::StrongFocus</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(45, 174, 135);
-color: white;
-border-radius: 25px;
-font: 25 12pt &quot;Ubuntu&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Sign up</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QStackedWidget" name="mainWindows">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1000</width>
-      <height>600</height>
-     </rect>
-=======
     <property name="sizePolicy">
      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
->>>>>>> upstream/main
     </property>
     <property name="minimumSize">
      <size>
@@ -228,751 +185,6 @@ font: 25 12pt &quot;Ubuntu&quot;;</string>
       <height>650</height>
      </size>
     </property>
-<<<<<<< HEAD
-    <property name="currentIndex">
-     <number>3</number>
-    </property>
-    <widget class="QWidget" name="LoginPage">
-     <widget class="QLabel" name="logoLoginPage">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>60</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>img/main.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lgnBtn">
-      <property name="geometry">
-       <rect>
-        <x>380</x>
-        <y>440</y>
-        <width>111</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Login</string>
-      </property>
-      <property name="autoDefault">
-       <bool>false</bool>
-      </property>
-      <property name="flat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="passInput">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>360</y>
-        <width>341</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="echoMode">
-       <enum>QLineEdit::Password</enum>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Password</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="unameInput">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>290</y>
-        <width>341</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Username</string>
-      </property>
-      <property name="clearButtonEnabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="rgstrBtn">
-      <property name="geometry">
-       <rect>
-        <x>530</x>
-        <y>440</y>
-        <width>111</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(117, 230, 218);</string>
-      </property>
-      <property name="text">
-       <string>Register</string>
-      </property>
-      <property name="autoDefault">
-       <bool>false</bool>
-      </property>
-      <property name="flat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <zorder>logoLoginPage</zorder>
-     <zorder>unameInput</zorder>
-     <zorder>passInput</zorder>
-     <zorder>lgnBtn</zorder>
-     <zorder>rgstrBtn</zorder>
-    </widget>
-    <widget class="QWidget" name="RegisterPage">
-     <widget class="QLineEdit" name="nameInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>210</y>
-        <width>300</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Student Name</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="phoneInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>280</y>
-        <width>300</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 7px;
-border: 1px solid #ddd;</string>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Student Phone</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="emailInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>280</y>
-        <width>301</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Student Email</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lNameInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>210</y>
-        <width>301</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Student Last Name</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="advisorInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>350</y>
-        <width>301</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Advisor Name</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="unameInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>420</y>
-        <width>300</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Username</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="passInputRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>420</y>
-        <width>300</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="placeholderText">
-       <string>Insert Password</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="logoLoginPage_2">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>30</y>
-        <width>161</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>img/main.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="rgstrBtnRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>520</y>
-        <width>121</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(117, 230, 218);</string>
-      </property>
-      <property name="text">
-       <string>Register</string>
-      </property>
-      <property name="autoDefault">
-       <bool>false</bool>
-      </property>
-      <property name="flat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="backBtnRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>520</y>
-        <width>121</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::StrongFocus</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Back</string>
-      </property>
-      <property name="autoDefault">
-       <bool>false</bool>
-      </property>
-      <property name="flat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="majorComboRegisterPage">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>350</y>
-        <width>301</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 7px;
-border: 1px solid #ddd;</string>
-      </property>
-      <property name="editable">
-       <bool>false</bool>
-      </property>
-      <property name="currentText">
-       <string>Business Administration</string>
-      </property>
-      <property name="placeholderText">
-       <string notr="true" extracomment="Major"/>
-      </property>
-      <item>
-       <property name="text">
-        <string>Business Administration</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Information Technology</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Law</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Political Science &amp; Public Administration</string>
-       </property>
-      </item>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="MainPage">
-     <widget class="QPushButton" name="degreePlanPortalBtn">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>330</y>
-        <width>281</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Degree Plan Portal</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="studentPortalBtn">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>260</y>
-        <width>281</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Student Portal</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="advisorPortalBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>400</y>
-        <width>281</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Advisor Portal</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="mainLogo">
-      <property name="geometry">
-       <rect>
-        <x>410</x>
-        <y>50</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Ubuntu</family>
-        <pointsize>14</pointsize>
-        <weight>3</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 65px;
-color: rgb(3, 127, 122);
-font: 25 14pt &quot;Ubuntu&quot;;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>img/main.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="lgtBtnMainPage">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>71</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Century Gothic</family>
-        <pointsize>10</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Logout</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="StudentPortal">
-     <widget class="QGroupBox" name="studentPortalButtons">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>100</y>
-        <width>271</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QPushButton" name="stdPortalAddInfoBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>170</y>
-         <width>191</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Edit Information</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="stdPortalDBBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>60</y>
-         <width>191</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Dashboard</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="topbarStudent">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1001</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QPushButton" name="stdPortalHomeBtn">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>61</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Home</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="stdPortalLgtBtn">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>20</y>
-         <width>71</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(76, 227, 227);</string>
-       </property>
-       <property name="text">
-        <string>Logout</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="logoStudent">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>20</y>
-         <width>181</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Ubuntu</family>
-         <pointsize>14</pointsize>
-         <weight>3</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 65px;
-color: rgb(3, 127, 122);
-font: 25 14pt &quot;Ubuntu&quot;;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>img/logo.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QStackedWidget" name="studentWindows">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>90</y>
-        <width>711</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <property name="currentIndex">
-       <number>1</number>
-=======
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
     </property>
@@ -991,7 +203,6 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
      <layout class="QGridLayout" name="elements" rowstretch="2,20" columnstretch="2,20">
       <property name="spacing">
        <number>0</number>
->>>>>>> upstream/main
       </property>
       <item row="0" column="0" colspan="2">
        <widget class="QFrame" name="titlebar">
@@ -1045,13 +256,13 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
             <property name="frameShadow">
              <enum>QFrame::Plain</enum>
             </property>
-            <widget class="QPushButton" name="minimize">
+            <widget class="QPushButton" name="minimizeBtn">
              <property name="geometry">
               <rect>
-               <x>34</x>
-               <y>15</y>
-               <width>26</width>
-               <height>26</height>
+               <x>20</x>
+               <y>10</y>
+               <width>41</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -1064,13 +275,13 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
               <string>—</string>
              </property>
             </widget>
-            <widget class="QPushButton" name="close">
+            <widget class="QPushButton" name="closeBtn">
              <property name="geometry">
               <rect>
-               <x>66</x>
-               <y>15</y>
-               <width>26</width>
-               <height>26</height>
+               <x>60</x>
+               <y>10</y>
+               <width>41</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -1147,17 +358,10 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
         <widget class="QPushButton" name="account">
          <property name="geometry">
           <rect>
-<<<<<<< HEAD
-           <x>360</x>
-           <y>180</y>
-           <width>290</width>
-           <height>50</height>
-=======
            <x>22</x>
            <y>365</y>
            <width>70</width>
            <height>70</height>
->>>>>>> upstream/main
           </rect>
          </property>
          <property name="sizePolicy">
@@ -1245,17 +449,10 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
         <widget class="QPushButton" name="degreeplan">
          <property name="geometry">
           <rect>
-<<<<<<< HEAD
-           <x>50</x>
-           <y>270</y>
-           <width>341</width>
-           <height>50</height>
-=======
            <x>20</x>
            <y>140</y>
            <width>70</width>
            <height>70</height>
->>>>>>> upstream/main
           </rect>
          </property>
          <property name="sizePolicy">
@@ -1356,17 +553,10 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
         <widget class="QLabel" name="degreeplan_label">
          <property name="geometry">
           <rect>
-<<<<<<< HEAD
-           <x>50</x>
-           <y>180</y>
-           <width>300</width>
-           <height>50</height>
-=======
            <x>4</x>
            <y>215</y>
            <width>100</width>
            <height>18</height>
->>>>>>> upstream/main
           </rect>
          </property>
          <property name="text">
@@ -1392,830 +582,6 @@ font: 25 14pt &quot;Ubuntu&quot;;</string>
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
-<<<<<<< HEAD
-        <widget class="QComboBox" name="stdPortalMajorCombo">
-         <property name="geometry">
-          <rect>
-           <x>400</x>
-           <y>270</y>
-           <width>251</width>
-           <height>50</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-radius: 7px;
-border: 1px solid #ddd;</string>
-         </property>
-         <property name="currentText">
-          <string>Major</string>
-         </property>
-         <property name="placeholderText">
-          <string>Major</string>
-         </property>
-         <item>
-          <property name="text">
-           <string>Business Administration</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Information Technology</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Law</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Political Science &amp; Public Administration</string>
-          </property>
-         </item>
-        </widget>
-        <zorder>stdPortalEmailInput</zorder>
-        <zorder>stdPortalNameInput</zorder>
-        <zorder>stdPortalAdvisorInput</zorder>
-        <zorder>stdPortalResetBtn</zorder>
-        <zorder>stdPortalLNameInput</zorder>
-        <zorder>stdPortalPhoneInput</zorder>
-        <zorder>StudentInformation</zorder>
-        <zorder>stdPortalSaveBtn</zorder>
-        <zorder>stdPortalMajorCombo</zorder>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="stdPortalDashboardView">
-       <widget class="QLabel" name="stdPortalSName">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>80</y>
-          <width>151</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Name</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="studentDashboard_3">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>20</y>
-          <width>241</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font-size: 12pt;</string>
-        </property>
-        <property name="text">
-         <string>Student Dashboard</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalLName">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>80</y>
-          <width>231</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Lastname</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalEmail">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>180</y>
-          <width>231</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Email Address</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalPhone">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>180</y>
-          <width>151</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Phone</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalAdvisor">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>280</y>
-          <width>161</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Advisor</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalNameLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>120</y>
-          <width>300</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalPhoneLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>220</y>
-          <width>300</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalAdvisorLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>320</y>
-          <width>300</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalLNameLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>120</y>
-          <width>300</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="stdPortalEmailLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>220</y>
-          <width>300</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="DegreePlanPortal">
-     <widget class="QGroupBox" name="topbarStudent_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1001</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QPushButton" name="dpPortalHomeBtn">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>61</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Home</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="dpPortalLgtBtn">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>20</y>
-         <width>71</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(76, 227, 227);</string>
-       </property>
-       <property name="text">
-        <string>Logout</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="logoDegreePlan">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>20</y>
-         <width>181</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Ubuntu</family>
-         <pointsize>14</pointsize>
-         <weight>3</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 65px;
-color: rgb(3, 127, 122);
-font: 25 14pt &quot;Ubuntu&quot;;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>img/logo.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="instructorPortalButtons">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>100</y>
-        <width>271</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QPushButton" name="dpPortalDPViewBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>240</y>
-         <width>191</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>View Degree Plan</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="dpPortalAddCoursesBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>170</y>
-         <width>191</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Add Courses</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="dpPortalCoursesViewBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>310</y>
-         <width>191</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>View Courses</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="dpPortalDBBtn">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>60</y>
-         <width>191</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Century Gothic</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Dashboard</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QStackedWidget" name="dPlanWindows">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>89</y>
-        <width>731</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="dashboardCreditsView">
-       <widget class="QLabel" name="dpPortalCGPALabel">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>410</y>
-          <width>300</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="dpPortalTotalCreditLabel">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>350</y>
-          <width>300</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="dashboardLabel">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>20</y>
-          <width>151</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font-size:12pt</string>
-        </property>
-        <property name="text">
-         <string>Dashboard</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="totalCredits">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>350</y>
-          <width>151</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Century Gothic</family>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Total Credits</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="CGPA">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>420</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Century Gothic</family>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Cumilative GPA</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="totalCredits_2">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>290</y>
-          <width>151</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Century Gothic</family>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Chosen Major</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="dpPortalMajorLabelDB">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>290</y>
-          <width>300</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border:solid;
-border-width: 1px;
-border-color: rgb(206, 206, 206);
-background-color: rgb(231, 231, 231);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="ViewCourse">
-       <widget class="QGroupBox" name="viewInstructorContainer">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>731</width>
-          <height>511</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-border-radius: 7px;</string>
-        </property>
-        <property name="title">
-         <string/>
-        </property>
-        <widget class="QTableWidget" name="dpPortalCoursesTable">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>80</y>
-           <width>711</width>
-           <height>401</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="editTriggers">
-          <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
-         </property>
-         <property name="showGrid">
-          <bool>true</bool>
-         </property>
-         <property name="gridStyle">
-          <enum>Qt::DotLine</enum>
-         </property>
-         <property name="cornerButtonEnabled">
-          <bool>false</bool>
-         </property>
-         <attribute name="verticalHeaderVisible">
-          <bool>false</bool>
-         </attribute>
-         <attribute name="verticalHeaderDefaultSectionSize">
-          <number>40</number>
-         </attribute>
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>2</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>3</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>4</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>5</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>6</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>7</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>8</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>9</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>10</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>ID</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Course Name</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Semester</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Course Category</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Course Status</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Credit Hour</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Final Grade</string>
-          </property>
-         </column>
-        </widget>
-        <widget class="QLineEdit" name="dpPortalSearchCourseInput">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>231</width>
-           <height>51</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-radius: 7px;
-border: 1px solid #ddd;</string>
-         </property>
-         <property name="placeholderText">
-          <string>Insert value to search</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="dpPortalTableResetBtn">
-         <property name="geometry">
-          <rect>
-           <x>560</x>
-           <y>10</y>
-           <width>71</width>
-           <height>50</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Century Gothic</family>
-           <pointsize>10</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-=======
         <widget class="QLabel" name="account_label">
          <property name="geometry">
           <rect>
@@ -2225,7 +591,6 @@ border: 1px solid #ddd;</string>
            <height>18</height>
           </rect>
          </property>
->>>>>>> upstream/main
          <property name="text">
           <string>Account</string>
          </property>
@@ -2275,16 +640,16 @@ border: 1px solid #ddd;</string>
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
            <property name="geometry">
             <rect>
-             <x>52</x>
-             <y>50</y>
+             <x>40</x>
+             <y>30</y>
              <width>470</width>
-             <height>136</height>
+             <height>151</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -2302,7 +667,7 @@ border: 1px solid #ddd;</string>
               <x>10</x>
               <y>10</y>
               <width>449</width>
-              <height>116</height>
+              <height>129</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_2">
@@ -2325,6 +690,32 @@ border: 1px solid #ddd;</string>
               <number>10</number>
              </property>
              <item row="2" column="1">
+              <widget class="QLabel" name="user_sum_major">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Business</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="user_sum_con">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Marketing</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
               <widget class="QLabel" name="user_sum_major_7">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -2337,7 +728,7 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="3" column="1">
+             <item row="3" column="0">
               <widget class="QLabel" name="user_sum_concentration_5">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -2350,19 +741,6 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_major">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Information Technology</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="user_sum_fullname">
                <property name="styleSheet">
@@ -2370,19 +748,6 @@ border: 1px solid #ddd;</string>
                </property>
                <property name="text">
                 <string>Rahmat Azad</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="user_sum_concentration">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Software Engineering</string>
                </property>
               </widget>
              </item>
@@ -2399,8 +764,8 @@ border: 1px solid #ddd;</string>
           <widget class="QFrame" name="courses_sum">
            <property name="geometry">
             <rect>
-             <x>52</x>
-             <y>225</y>
+             <x>40</x>
+             <y>230</y>
              <width>470</width>
              <height>311</height>
             </rect>
@@ -2443,7 +808,7 @@ border: 1px solid #ddd;</string>
               <number>10</number>
              </property>
              <item row="6" column="2">
-              <widget class="QLabel" name="user_sum_major_24">
+              <widget class="QLabel" name="sum_core_rem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2458,8 +823,50 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
+             <item row="8" column="1">
+              <widget class="QLabel" name="sum_selective_com">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>2</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="sum_general_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>5</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="4">
+              <widget class="QLabel" name="user_sum_fullname_5">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Course Categories Summary</string>
+               </property>
+              </widget>
+             </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_major_13">
+              <widget class="QLabel" name="sum_general_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2474,150 +881,8 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="10" column="2">
-              <widget class="QLabel" name="user_sum_major_26">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>1</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="2">
-              <widget class="QLabel" name="user_sum_major_23">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>5</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_major_11">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Category</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
-              <widget class="QLabel" name="user_sum_major_20">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>6</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="2">
-              <widget class="QLabel" name="user_sum_major_22">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Remaining</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="2">
-              <widget class="QLabel" name="user_sum_major_25">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>0</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="0" colspan="4">
-              <widget class="Line" name="line_18">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
-              <widget class="QLabel" name="user_sum_major_15">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>45</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="0">
-              <widget class="QLabel" name="user_sum_concentration_8">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Core</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_concentration_9">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Selective</string>
-               </property>
-              </widget>
-             </item>
              <item row="6" column="3">
-              <widget class="QLabel" name="user_sum_major_19">
+              <widget class="QLabel" name="sum_core_cre">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2632,8 +897,8 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="10" column="3">
-              <widget class="QLabel" name="user_sum_major_21">
+             <item row="8" column="2">
+              <widget class="QLabel" name="sum_selective_rem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2641,37 +906,7 @@ border: 1px solid #ddd;</string>
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>6</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0" colspan="4">
-              <widget class="Line" name="line_11">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0" colspan="4">
-              <widget class="Line" name="line_10">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="1">
-              <widget class="QLabel" name="user_sum_major_18">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>2</string>
+                <string>0</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -2691,19 +926,10 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="1">
-              <widget class="QLabel" name="user_sum_major_16">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>10</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
+             <item row="3" column="0" colspan="4">
+              <widget class="Line" name="line_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
@@ -2720,20 +946,62 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item row="7" column="0" colspan="4">
-              <widget class="Line" name="line_12">
+             <item row="10" column="2">
+              <widget class="QLabel" name="sum_concent_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>1</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="4">
+              <widget class="Line" name="line_11">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item row="0" column="0" colspan="4">
-              <widget class="QLabel" name="user_sum_fullname_5">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_major_11">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
                </property>
                <property name="text">
-                <string>Course Categories Summary</string>
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="sum_general_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>45</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0" colspan="4">
+              <widget class="Line" name="line_18">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
@@ -2753,6 +1021,22 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
+             <item row="6" column="1">
+              <widget class="QLabel" name="sum_core_com">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>10</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
              <item row="2" column="3">
               <widget class="QLabel" name="user_sum_major_14">
                <property name="sizePolicy">
@@ -2762,15 +1046,15 @@ border: 1px solid #ddd;</string>
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>Credits</string>
+                <string>Credits Sum</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLabel" name="user_sum_major_17">
+             <item row="10" column="1">
+              <widget class="QLabel" name="sum_concent_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2782,6 +1066,87 @@ border: 1px solid #ddd;</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="4">
+              <widget class="Line" name="line_12">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3">
+              <widget class="QLabel" name="sum_concent_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>6</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="user_sum_concentration_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Selective</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="user_sum_major_22">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Remaining</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3">
+              <widget class="QLabel" name="sum_selective_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>6</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="user_sum_concentration_8">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Core</string>
                </property>
               </widget>
              </item>
@@ -2798,10 +1163,10 @@ border: 1px solid #ddd;</string>
           <widget class="QFrame" name="degreeplan_sum">
            <property name="geometry">
             <rect>
-             <x>566</x>
-             <y>50</y>
+             <x>580</x>
+             <y>30</y>
              <width>470</width>
-             <height>136</height>
+             <height>151</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -2817,9 +1182,9 @@ border: 1px solid #ddd;</string>
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>16</y>
               <width>451</width>
-              <height>117</height>
+              <height>121</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_3">
@@ -2841,6 +1206,29 @@ border: 1px solid #ddd;</string>
              <property name="verticalSpacing">
               <number>10</number>
              </property>
+             <item row="0" column="0" colspan="2">
+              <widget class="QLabel" name="user_sum_fullname_2">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Degree Plan Summary</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="sum_year">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>v.2018</string>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="0">
               <widget class="QLabel" name="user_sum_concentration_2">
                <property name="sizePolicy">
@@ -2863,42 +1251,12 @@ border: 1px solid #ddd;</string>
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>Information Technology</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_6">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>v.2018</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0" colspan="2">
-              <widget class="QLabel" name="user_sum_fullname_2">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Degree Plan Summary</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0" colspan="2">
-              <widget class="Line" name="line_5">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
+                <string>Year</string>
                </property>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_concentration_4">
+              <widget class="QLabel" name="sum_TotCredit">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -2910,16 +1268,23 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
             </layout>
            </widget>
           </widget>
           <widget class="QFrame" name="gpa_sum">
            <property name="geometry">
             <rect>
-             <x>566</x>
+             <x>580</x>
              <y>225</y>
              <width>470</width>
-             <height>136</height>
+             <height>151</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -2937,7 +1302,7 @@ border: 1px solid #ddd;</string>
               <x>10</x>
               <y>10</y>
               <width>451</width>
-              <height>116</height>
+              <height>131</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
@@ -2986,7 +1351,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_4">
+              <widget class="QLabel" name="sum_coursesCom">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3002,7 +1367,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_5">
+              <widget class="QLabel" name="sum_CGPA">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3040,10 +1405,10 @@ border: 1px solid #ddd;</string>
           <widget class="QFrame" name="graduation_time">
            <property name="geometry">
             <rect>
-             <x>566</x>
+             <x>580</x>
              <y>400</y>
              <width>470</width>
-             <height>136</height>
+             <height>141</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -3061,7 +1426,7 @@ border: 1px solid #ddd;</string>
               <x>10</x>
               <y>10</y>
               <width>451</width>
-              <height>116</height>
+              <height>121</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_5">
@@ -3110,7 +1475,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_9">
+              <widget class="QLabel" name="sum_coursesSem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3123,7 +1488,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_10">
+              <widget class="QLabel" name="sum_remSem2Grad">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3219,7 +1584,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_concentration_17">
+              <widget class="QLabel" name="dp_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3258,7 +1623,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_45">
+              <widget class="QLabel" name="dp_major">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3291,7 +1656,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="5" column="1">
-              <widget class="QLabel" name="user_sum_concentration_18">
+              <widget class="QLabel" name="dp_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3317,7 +1682,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_46">
+              <widget class="QLabel" name="dp_year">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3389,7 +1754,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="8" column="2">
-              <widget class="QLabel" name="user_sum_concentration_35">
+              <widget class="QLabel" name="dp_con_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3455,7 +1820,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="6" column="1">
-              <widget class="QLabel" name="user_sum_concentration_29">
+              <widget class="QLabel" name="dp_cor_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3468,7 +1833,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_concentration_24">
+              <widget class="QLabel" name="dp_gen_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3507,7 +1872,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="8" column="1">
-              <widget class="QLabel" name="user_sum_concentration_31">
+              <widget class="QLabel" name="dp_con_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3520,7 +1885,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="user_sum_concentration_32">
+              <widget class="QLabel" name="dp_gen_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3553,7 +1918,7 @@ border: 1px solid #ddd;</string>
               </widget>
              </item>
              <item row="6" column="2">
-              <widget class="QLabel" name="user_sum_concentration_33">
+              <widget class="QLabel" name="dp_cor_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -3618,7 +1983,7 @@ border: 1px solid #ddd;</string>
                 <string notr="true">font-size: 18px;</string>
                </property>
                <property name="text">
-                <string>Configure Your Degee Plan</string>
+                <string>Configure Your Degree Plan</string>
                </property>
               </widget>
              </item>
@@ -4143,14 +2508,14 @@ border: 1px solid #ddd;</string>
                <attribute name="verticalHeaderVisible">
                 <bool>false</bool>
                </attribute>
+               <attribute name="verticalHeaderMinimumSectionSize">
+                <number>30</number>
+               </attribute>
                <attribute name="verticalHeaderDefaultSectionSize">
                 <number>35</number>
                </attribute>
                <attribute name="verticalHeaderHighlightSections">
                 <bool>true</bool>
-               </attribute>
-               <attribute name="verticalHeaderMinimumSectionSize">
-                <number>30</number>
                </attribute>
                <attribute name="verticalHeaderStretchLastSection">
                 <bool>true</bool>
@@ -4424,23 +2789,35 @@ border: 1px solid #ddd;</string>
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget_12">
+           <widget class="QWidget" name="layoutWidget_14">
             <property name="geometry">
              <rect>
-              <x>24</x>
-              <y>20</y>
-              <width>423</width>
-              <height>97</height>
+              <x>10</x>
+              <y>10</y>
+              <width>449</width>
+              <height>111</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="account_page_user_container" stretch="3,0,0,0">
-             <property name="spacing">
+            <layout class="QGridLayout" name="gridLayout_9">
+             <property name="leftMargin">
               <number>10</number>
              </property>
              <property name="topMargin">
               <number>5</number>
              </property>
-             <item>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="account_page_user_title">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
@@ -4450,24 +2827,62 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="account_page_user_line">
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_16">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="account_page_user_phone">
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_major_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="text">
-                <string>ID: 38786</string>
+                <string>ID:</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="accoun_page_user_email">
+             <item row="2" column="1">
+              <widget class="QLabel" name="account_page_user_id">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="text">
-                <string>rahmat.azad@auaf.edu.af</string>
+                <string>12345</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="user_sum_concentration_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Email:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="accoun_page_user_email">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>rahmat@auaf.edu.af</string>
                </property>
               </widget>
              </item>
@@ -4492,26 +2907,74 @@ border: 1px solid #ddd;</string>
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget_6">
+           <widget class="QWidget" name="layoutWidget_7">
             <property name="geometry">
              <rect>
-              <x>26</x>
-              <y>23</y>
-              <width>421</width>
-              <height>151</height>
+              <x>10</x>
+              <y>20</y>
+              <width>449</width>
+              <height>161</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="account_page_credential_container" stretch="0,0,0,0,0,0">
-             <property name="spacing">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
               <number>10</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>5</number>
              </property>
-             <item>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="3" column="1">
+              <widget class="QLabel" name="account_page_credential_username">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>@rhmtazad</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="user_sum_concentration_13">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Password:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="user_sum_major_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Username:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="account_page_credential_title">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
@@ -4521,15 +2984,28 @@ border: 1px solid #ddd;</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="account_page_credential_line1">
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_15">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QPushButton" name="account_page_credential_line2">
+             <item row="4" column="1">
+              <widget class="QLabel" name="account_page_credential_password">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>################</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="2">
+              <widget class="QPushButton" name="account_page_credential_reveal">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -4538,27 +3014,6 @@ border: 1px solid #ddd;</string>
                </property>
                <property name="text">
                 <string>Click Here to See the Password</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="Line" name="account_page_credential_line">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="account_page_credential_username">
-               <property name="text">
-                <string>Username: @rhmtazad</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="account_page_credential_password">
-               <property name="text">
-                <string>Password: ################</string>
                </property>
               </widget>
              </item>
@@ -4650,22 +3105,6 @@ border: 1px solid #ddd;</string>
                <property name="verticalSpacing">
                 <number>30</number>
                </property>
-               <item row="0" column="1">
-                <widget class="QLineEdit" name="config_account_lastname">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Lastname</string>
-                 </property>
-                </widget>
-               </item>
                <item row="1" column="0">
                 <widget class="QLineEdit" name="config_account_email">
                  <property name="sizePolicy">
@@ -4804,6 +3243,22 @@ border: 1px solid #ddd;</string>
                  </property>
                  <property name="text">
                   <string>Save</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="config_account_lastname">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Lastname</string>
                  </property>
                 </widget>
                </item>
