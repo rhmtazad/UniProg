@@ -1,4 +1,4 @@
-## UniProg v3.1.1
+## UniProg v3.1.2
 
 [![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
 [![Made with Python](https://img.shields.io/badge/Python->=3.7-blue?logo=python&logoColor=white)](https://python.org) 
