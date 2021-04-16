@@ -231,7 +231,7 @@ background-color: transparent;
           <item>
            <widget class="QLabel" name="version">
             <property name="text">
-             <string>v1.1.2</string>
+             <string>v3.1.2</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -640,7 +640,7 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
@@ -872,7 +872,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_major_11">
+              <widget class="QLabel" name="user_sum_category">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -901,7 +901,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="2">
-              <widget class="QLabel" name="user_sum_major_22">
+              <widget class="QLabel" name="user_sum_remaining">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -956,7 +956,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="6" column="0">
-              <widget class="QLabel" name="user_sum_concentration_8">
+              <widget class="QLabel" name="user_sum_core">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -969,7 +969,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_concentration_9">
+              <widget class="QLabel" name="user_sum_selective">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1044,7 +1044,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="10" column="0">
-              <widget class="QLabel" name="user_sum_concentration_10">
+              <widget class="QLabel" name="user_sum_concentration_7">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1073,7 +1073,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_7">
+              <widget class="QLabel" name="user_sum_general">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1103,7 +1103,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_12">
+              <widget class="QLabel" name="user_sum_completed">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1119,7 +1119,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="3">
-              <widget class="QLabel" name="user_sum_major_14">
+              <widget class="QLabel" name="user_sum_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1610,7 +1610,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_11">
+              <widget class="QLabel" name="user_sum_concentration_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                  <horstretch>0</horstretch>
