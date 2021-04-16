@@ -231,7 +231,7 @@ background-color: transparent;
           <item>
            <widget class="QLabel" name="version">
             <property name="text">
-             <string>v1.1.2</string>
+             <string>v3.1.2</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -640,7 +640,11 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
+<<<<<<< HEAD
           <number>1</number>
+=======
+          <number>0</number>
+>>>>>>> upstream/main
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
@@ -855,10 +859,20 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="0" column="0" colspan="4">
               <widget class="QLabel" name="user_sum_fullname_5">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
+=======
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_category">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+>>>>>>> upstream/main
                </property>
                <property name="text">
                 <string>Course Categories Summary</string>
@@ -881,8 +895,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="6" column="3">
               <widget class="QLabel" name="sum_core_cre">
+=======
+             <item row="2" column="2">
+              <widget class="QLabel" name="user_sum_remaining">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -933,8 +952,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="4" column="0">
               <widget class="QLabel" name="user_sum_concentration_7">
+=======
+             <item row="6" column="0">
+              <widget class="QLabel" name="user_sum_core">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -946,8 +970,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="10" column="2">
               <widget class="QLabel" name="sum_concent_rem">
+=======
+             <item row="8" column="0">
+              <widget class="QLabel" name="user_sum_selective">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1021,8 +1050,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="6" column="1">
               <widget class="QLabel" name="sum_core_com">
+=======
+             <item row="10" column="0">
+              <widget class="QLabel" name="user_sum_concentration_7">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1053,8 +1087,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="10" column="1">
               <widget class="QLabel" name="sum_concent_com">
+=======
+             <item row="4" column="0">
+              <widget class="QLabel" name="user_sum_general">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1092,8 +1131,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="8" column="0">
               <widget class="QLabel" name="user_sum_concentration_9">
+=======
+             <item row="2" column="1">
+              <widget class="QLabel" name="user_sum_completed">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1105,8 +1149,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
              <item row="2" column="2">
               <widget class="QLabel" name="user_sum_major_22">
+=======
+             <item row="2" column="3">
+              <widget class="QLabel" name="user_sum_credits">
+>>>>>>> upstream/main
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1610,7 +1659,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_11">
+              <widget class="QLabel" name="user_sum_concentration_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                  <horstretch>0</horstretch>
