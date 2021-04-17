@@ -231,7 +231,7 @@ background-color: transparent;
           <item>
            <widget class="QLabel" name="version">
             <property name="text">
-             <string>v3.1.2</string>
+             <string>v1.1.2</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -256,13 +256,13 @@ background-color: transparent;
             <property name="frameShadow">
              <enum>QFrame::Plain</enum>
             </property>
-            <widget class="QPushButton" name="minimize">
+            <widget class="QPushButton" name="minimizeBtn">
              <property name="geometry">
               <rect>
-               <x>34</x>
-               <y>15</y>
-               <width>26</width>
-               <height>26</height>
+               <x>20</x>
+               <y>10</y>
+               <width>41</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -275,13 +275,13 @@ background-color: transparent;
               <string>—</string>
              </property>
             </widget>
-            <widget class="QPushButton" name="close">
+            <widget class="QPushButton" name="closeBtn">
              <property name="geometry">
               <rect>
-               <x>66</x>
-               <y>15</y>
-               <width>26</width>
-               <height>26</height>
+               <x>60</x>
+               <y>10</y>
+               <width>41</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -640,7 +640,7 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
@@ -649,7 +649,7 @@ background-color: transparent;
              <x>52</x>
              <y>50</y>
              <width>470</width>
-             <height>136</height>
+             <height>151</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -667,7 +667,7 @@ background-color: transparent;
               <x>10</x>
               <y>10</y>
               <width>449</width>
-              <height>116</height>
+              <height>129</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_2">
@@ -690,6 +690,32 @@ background-color: transparent;
               <number>10</number>
              </property>
              <item row="2" column="1">
+              <widget class="QLabel" name="user_sum_major">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Business</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="user_sum_con">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Marketing</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
               <widget class="QLabel" name="user_sum_major_7">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -702,7 +728,7 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="3" column="1">
+             <item row="3" column="0">
               <widget class="QLabel" name="user_sum_concentration_5">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -715,19 +741,6 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_major">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Information Technology</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="user_sum_fullname">
                <property name="styleSheet">
@@ -735,19 +748,6 @@ background-color: transparent;
                </property>
                <property name="text">
                 <string>Rahmat Azad</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="user_sum_concentration">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Software Engineering</string>
                </property>
               </widget>
              </item>
@@ -808,7 +808,7 @@ background-color: transparent;
               <number>10</number>
              </property>
              <item row="6" column="2">
-              <widget class="QLabel" name="user_sum_major_24">
+              <widget class="QLabel" name="sum_core_rem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -823,8 +823,50 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+             <item row="8" column="1">
+              <widget class="QLabel" name="sum_selective_com">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>2</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="sum_general_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>5</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="4">
+              <widget class="QLabel" name="user_sum_fullname_5">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Course Categories Summary</string>
+               </property>
+              </widget>
+             </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_major_13">
+              <widget class="QLabel" name="sum_general_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -839,150 +881,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="10" column="2">
-              <widget class="QLabel" name="user_sum_major_26">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>1</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="2">
-              <widget class="QLabel" name="user_sum_major_23">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>5</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_category">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Category</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
-              <widget class="QLabel" name="user_sum_major_20">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>6</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="2">
-              <widget class="QLabel" name="user_sum_remaining">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Remaining</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="2">
-              <widget class="QLabel" name="user_sum_major_25">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>0</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="0" colspan="4">
-              <widget class="Line" name="line_18">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
-              <widget class="QLabel" name="user_sum_major_15">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>45</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="0">
-              <widget class="QLabel" name="user_sum_core">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Core</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_selective">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Selective</string>
-               </property>
-              </widget>
-             </item>
              <item row="6" column="3">
-              <widget class="QLabel" name="user_sum_major_19">
+              <widget class="QLabel" name="sum_core_cre">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -997,8 +897,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="10" column="3">
-              <widget class="QLabel" name="user_sum_major_21">
+             <item row="8" column="2">
+              <widget class="QLabel" name="sum_selective_rem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1006,7 +906,56 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>6</string>
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="user_sum_concentration_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Concentration</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="4">
+              <widget class="Line" name="line_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="user_sum_concentration_7">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>General</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="2">
+              <widget class="QLabel" name="sum_concent_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>1</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -1020,15 +969,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="3" column="0" colspan="4">
-              <widget class="Line" name="line_10">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="1">
-              <widget class="QLabel" name="user_sum_major_18">
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_major_11">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1036,74 +978,35 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>2</string>
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="sum_general_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>45</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item row="10" column="0">
-              <widget class="QLabel" name="user_sum_concentration_7">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Concentration</string>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="1">
-              <widget class="QLabel" name="user_sum_major_16">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>10</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_general">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>General</string>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="0" colspan="4">
-              <widget class="Line" name="line_12">
+             <item row="9" column="0" colspan="4">
+              <widget class="Line" name="line_18">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0" colspan="4">
-              <widget class="QLabel" name="user_sum_fullname_5">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Course Categories Summary</string>
                </property>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_completed">
+              <widget class="QLabel" name="user_sum_major_12">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1118,8 +1021,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="2" column="3">
-              <widget class="QLabel" name="user_sum_credits">
+             <item row="6" column="1">
+              <widget class="QLabel" name="sum_core_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1127,15 +1030,31 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>Credits</string>
+                <string>10</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLabel" name="user_sum_major_17">
+             <item row="2" column="3">
+              <widget class="QLabel" name="user_sum_major_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Credits Sum</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="1">
+              <widget class="QLabel" name="sum_concent_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1147,6 +1066,87 @@ background-color: transparent;
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="4">
+              <widget class="Line" name="line_12">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3">
+              <widget class="QLabel" name="sum_concent_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>6</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="user_sum_concentration_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Selective</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="user_sum_major_22">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Remaining</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="3">
+              <widget class="QLabel" name="sum_selective_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>6</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="user_sum_concentration_8">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Core</string>
                </property>
               </widget>
              </item>
@@ -1206,6 +1206,29 @@ background-color: transparent;
              <property name="verticalSpacing">
               <number>10</number>
              </property>
+             <item row="0" column="0" colspan="2">
+              <widget class="QLabel" name="user_sum_fullname_2">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Degree Plan Summary</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="sum_year">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>v.2018</string>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="0">
               <widget class="QLabel" name="user_sum_concentration_2">
                <property name="sizePolicy">
@@ -1228,42 +1251,12 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>Information Technology</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_6">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>v.2018</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0" colspan="2">
-              <widget class="QLabel" name="user_sum_fullname_2">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Degree Plan Summary</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0" colspan="2">
-              <widget class="Line" name="line_5">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
+                <string>Year</string>
                </property>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_concentration_4">
+              <widget class="QLabel" name="sum_TotCredit">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1272,6 +1265,13 @@ background-color: transparent;
                </property>
                <property name="text">
                 <string>120 Credits, 20 Courses</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
@@ -1351,7 +1351,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_4">
+              <widget class="QLabel" name="sum_coursesCom">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1367,7 +1367,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_5">
+              <widget class="QLabel" name="sum_CGPA">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1475,7 +1475,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_9">
+              <widget class="QLabel" name="sum_coursesSem">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1488,7 +1488,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_10">
+              <widget class="QLabel" name="sum_remSem2Grad">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1584,7 +1584,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_concentration_17">
+              <widget class="QLabel" name="dp_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1610,7 +1610,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_courses">
+              <widget class="QLabel" name="user_sum_concentration_11">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1623,7 +1623,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_45">
+              <widget class="QLabel" name="dp_major">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1656,7 +1656,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="5" column="1">
-              <widget class="QLabel" name="user_sum_concentration_18">
+              <widget class="QLabel" name="dp_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1682,7 +1682,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLabel" name="user_sum_major_46">
+              <widget class="QLabel" name="dp_year">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1754,7 +1754,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="8" column="2">
-              <widget class="QLabel" name="user_sum_concentration_35">
+              <widget class="QLabel" name="dp_con_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1820,7 +1820,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="6" column="1">
-              <widget class="QLabel" name="user_sum_concentration_29">
+              <widget class="QLabel" name="dp_cor_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1833,7 +1833,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QLabel" name="user_sum_concentration_24">
+              <widget class="QLabel" name="dp_gen_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1872,7 +1872,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="8" column="1">
-              <widget class="QLabel" name="user_sum_concentration_31">
+              <widget class="QLabel" name="dp_con_courses">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1885,7 +1885,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="user_sum_concentration_32">
+              <widget class="QLabel" name="dp_gen_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1918,7 +1918,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="6" column="2">
-              <widget class="QLabel" name="user_sum_concentration_33">
+              <widget class="QLabel" name="dp_cor_credits">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1983,7 +1983,7 @@ background-color: transparent;
                 <string notr="true">font-size: 18px;</string>
                </property>
                <property name="text">
-                <string>Configure Your Degee Plan</string>
+                <string>Configure Your Degree Plan</string>
                </property>
               </widget>
              </item>
@@ -2508,14 +2508,14 @@ background-color: transparent;
                <attribute name="verticalHeaderVisible">
                 <bool>false</bool>
                </attribute>
+               <attribute name="verticalHeaderMinimumSectionSize">
+                <number>30</number>
+               </attribute>
                <attribute name="verticalHeaderDefaultSectionSize">
                 <number>35</number>
                </attribute>
                <attribute name="verticalHeaderHighlightSections">
                 <bool>true</bool>
-               </attribute>
-               <attribute name="verticalHeaderMinimumSectionSize">
-                <number>30</number>
                </attribute>
                <attribute name="verticalHeaderStretchLastSection">
                 <bool>true</bool>
@@ -2789,23 +2789,35 @@ background-color: transparent;
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget_12">
+           <widget class="QWidget" name="layoutWidget_14">
             <property name="geometry">
              <rect>
-              <x>24</x>
-              <y>20</y>
-              <width>423</width>
-              <height>97</height>
+              <x>10</x>
+              <y>10</y>
+              <width>449</width>
+              <height>111</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="account_page_user_container" stretch="3,0,0,0">
-             <property name="spacing">
+            <layout class="QGridLayout" name="gridLayout_9">
+             <property name="leftMargin">
               <number>10</number>
              </property>
              <property name="topMargin">
               <number>5</number>
              </property>
-             <item>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="account_page_user_title">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
@@ -2815,24 +2827,62 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="account_page_user_line">
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_16">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="account_page_user_phone">
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_major_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="text">
-                <string>ID: 38786</string>
+                <string>ID:</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QLabel" name="accoun_page_user_email">
+             <item row="2" column="1">
+              <widget class="QLabel" name="account_page_user_id">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="text">
-                <string>rahmat.azad@auaf.edu.af</string>
+                <string>12345</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="user_sum_concentration_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Email:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="accoun_page_user_email">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>rahmat@auaf.edu.af</string>
                </property>
               </widget>
              </item>
@@ -2857,26 +2907,74 @@ background-color: transparent;
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget_6">
+           <widget class="QWidget" name="layoutWidget_7">
             <property name="geometry">
              <rect>
-              <x>26</x>
-              <y>23</y>
-              <width>421</width>
-              <height>151</height>
+              <x>10</x>
+              <y>20</y>
+              <width>449</width>
+              <height>161</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="account_page_credential_container" stretch="0,0,0,0,0,0">
-             <property name="spacing">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
               <number>10</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>5</number>
              </property>
-             <item>
+             <property name="horizontalSpacing">
+              <number>30</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="3" column="1">
+              <widget class="QLabel" name="account_page_credential_username">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>@rhmtazad</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="user_sum_concentration_13">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Password:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="user_sum_major_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Username:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
               <widget class="QLabel" name="account_page_credential_title">
                <property name="styleSheet">
                 <string notr="true">font-size: 18px;</string>
@@ -2886,15 +2984,28 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="Line" name="account_page_credential_line1">
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_15">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QPushButton" name="account_page_credential_line2">
+             <item row="4" column="1">
+              <widget class="QLabel" name="account_page_credential_password">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>################</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="2">
+              <widget class="QPushButton" name="account_page_credential_reveal">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -2903,27 +3014,6 @@ background-color: transparent;
                </property>
                <property name="text">
                 <string>Click Here to See the Password</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="Line" name="account_page_credential_line">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="account_page_credential_username">
-               <property name="text">
-                <string>Username: @rhmtazad</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="account_page_credential_password">
-               <property name="text">
-                <string>Password: ################</string>
                </property>
               </widget>
              </item>
@@ -3015,22 +3105,6 @@ background-color: transparent;
                <property name="verticalSpacing">
                 <number>30</number>
                </property>
-               <item row="0" column="1">
-                <widget class="QLineEdit" name="config_account_lastname">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Lastname</string>
-                 </property>
-                </widget>
-               </item>
                <item row="1" column="0">
                 <widget class="QLineEdit" name="config_account_email">
                  <property name="sizePolicy">
@@ -3169,6 +3243,22 @@ background-color: transparent;
                  </property>
                  <property name="text">
                   <string>Save</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="config_account_lastname">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Lastname</string>
                  </property>
                 </widget>
                </item>
