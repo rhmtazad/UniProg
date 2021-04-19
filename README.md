@@ -1,4 +1,4 @@
-## UniProg v3.1.2
+## UniProg v1.4.7
 
 [![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
 [![Made with Python](https://img.shields.io/badge/Python->=3.7-blue?logo=python&logoColor=white)](https://python.org) 
@@ -37,20 +37,23 @@ ___
 
 ## User Interface Preview
 
+### Login
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/login.PNG"/>
+
+### Sign Up
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/signup.PNG"/>
+
 ### Dashboard  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.JPG"/>  
-
-
-### Degree Plan Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.JPG"/>  
-
-
-### Account Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.JPG"/>  
-
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.PNG"/>  
 
 ### Courses Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.JPG"/>  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/> 
+
+### Degree Plan Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.PNG"/>  
+
+### Account Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.PNG"/>   
 
 
 ## Requirements
