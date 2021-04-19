@@ -37,10 +37,10 @@ ___
 
 ## User Interface Preview
 
-### Login
+### Login Portal
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/login.PNG"/>
 
-### Sign Up
+### Sign Up Portal
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/signup.PNG"/>
 
 ### Dashboard  
