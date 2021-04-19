@@ -665,7 +665,7 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="login_page">
           <widget class="QFrame" name="login_input">
@@ -674,7 +674,7 @@ background-color: transparent;
              <x>590</x>
              <y>96</y>
              <width>411</width>
-             <height>231</height>
+             <height>267</height>
             </rect>
            </property>
            <property name="frameShape">
@@ -689,27 +689,27 @@ background-color: transparent;
               <x>20</x>
               <y>20</y>
               <width>371</width>
-              <height>191</height>
+              <height>227</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="login_container">
              <property name="verticalSpacing">
               <number>20</number>
              </property>
-             <item row="2" column="1">
-              <widget class="QPushButton" name="signup_button">
+             <item row="1" column="0" colspan="2">
+              <widget class="QLineEdit" name="user_id_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
-               <property name="text">
-                <string>Sign Up</string>
+               <property name="placeholderText">
+                <string>Insert your user ID</string>
                </property>
               </widget>
              </item>
-             <item row="1" column="0" colspan="2">
+             <item row="2" column="0" colspan="2">
               <widget class="QLineEdit" name="password_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -722,7 +722,20 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
+             <item row="3" column="1">
+              <widget class="QPushButton" name="signup_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Sign Up</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
               <widget class="QPushButton" name="login_button">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -739,15 +752,12 @@ background-color: transparent;
               </widget>
              </item>
              <item row="0" column="0" colspan="2">
-              <widget class="QLineEdit" name="user_id_input">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
+              <widget class="QLabel" name="login_title">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
                </property>
-               <property name="placeholderText">
-                <string>Insert your user ID</string>
+               <property name="text">
+                <string> Login to Your Account</string>
                </property>
               </widget>
              </item>
