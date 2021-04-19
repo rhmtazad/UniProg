@@ -1,7 +1,7 @@
-## UniProg v3.1.2
+## UniProg v1.4.7
 
 [![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
-[![Made with Python](https://img.shields.io/badge/Python->=3.7-blue?logo=python&logoColor=white)](https://python.org) 
+[![Made with Python](https://img.shields.io/badge/Python<=3.7-blue?logo=python&logoColor=white)](https://python.org) 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 [![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 [![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
@@ -37,20 +37,23 @@ ___
 
 ## User Interface Preview
 
+### Login Portal
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/login.PNG"/>
+
+### Sign Up Portal
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/signup.PNG"/>
+
 ### Dashboard  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.JPG"/>  
-
-
-### Degree Plan Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.JPG"/>  
-
-
-### Account Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.JPG"/>  
-
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.PNG"/>  
 
 ### Courses Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.JPG"/>  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/> 
+
+### Degree Plan Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.PNG"/>  
+
+### Account Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.PNG"/>   
 
 
 ## Requirements
