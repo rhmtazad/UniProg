@@ -1,0 +1,41 @@
+id,name,category,credits,taken,grade
+ABC 000,Sample course name 1,General,3,True,3.8
+ABC 001,Sample course name 2,General,3,False,3.5
+ABC 002,Sample course name 3,General,3,True,3.2
+ABC 003,Sample course name 4,General,3,True,3.1
+UNV 100,University Success,General,1,False,3.9
+STA 210,Statistics I,General,3,True,3.6
+PHY 120,Introduction to Physics I,General,4,False,3.74
+MTH 120,Discrete Math,Core,3,True,3.84
+ABC 004,Sample course name 5,General,3,True,3.57
+ABC 005,Sample course name 6,General,3,False,2.5
+BIO 130,Introduction to Biology I,General,4,False,3.94
+ENG 110,Academic Writing I,General,3,True,4
+ENG 115,Academic Writing II,General,3,True,3.1
+ENG 215,Expository Essay,General,3,True,3.4
+ENG 315,Translation: English & Dari,General,3,True,3.65
+GEO 101,Introduction to Geography,General,3,False,3.55
+HIS 120,History of Afghanistan,General,3,True,3.74
+ITC 109,Intro to Computers,General,3,True,3.21
+ITC 110,Intro to Information Technology,Core,3,False,3.6
+ITC 135,Ethics and Professional Conduct,Core,3,False,3.2
+ITC 210,System Integration & Hardware Architecture,Core,3,False,3.8
+ITC 215,Introduction to Programming,Core,3,True,3.99
+ITC 220,Fundamentals of Network and Telecom,Core,3,True,3.94
+ITC 225,Programming II,Core,3,True,3.25
+ITC 230,Database Concepts,Core,3,False,3.23
+ITC 240,System Analysis and Design,Core,3,True,3.65
+ITC 310,Data Structures,Core,3,False,3.96
+ITC 315,Software Engineering,Concentration,3,False,3.23
+ITC 330,System Admin and Maintenance,Core,3,False,3.71
+ITC 335,Mobile Application Development,Core,3,False,3.2
+ITC 340,Human-Computer Interaction,Core,3,True,3.96
+ITC 345,Introduction to Python,Core,3,True,3.0
+ITC 360,Data Mining,Core,3,False,3.65
+ITC 410,Web Design and Development,Core,3,False,3.84
+ITC 420,Info Technology Management,Core,3,True,3.78
+ITC 435,Software Testing and Quality Assurance,Concentration,3,True,3.94
+ITC 440,Real Time and Embedded Development,Concentration,3,True,3.64
+LGS 110,Introduction to Afghanistan Law,General,3,False,3.11
+MGT 100,Introduction of Business,General,3,False,3.99
+MTH 110,Introduction of College Algebra,General,3,True,3.97

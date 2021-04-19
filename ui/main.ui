@@ -34,7 +34,6 @@
   <property name="styleSheet">
    <string notr="true">* {
     color: gray;
-    box-sizing: border-box;
     font-size: 15px;
     border-color: #eee;
 }
@@ -140,6 +139,32 @@ QLineEdit {
 {
 border: none;
 background-color: transparent;
+}
+
+#login_button,
+#signup_button,
+#signup_create_account
+ {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#signup_reset {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5)
+}
+
+#login_button,
+#signup_create_account
+ {
+	background: #92e3a9;
+}
+
+#login_button:hover,
+#signup_create_account:hover
+ {
+	background: #dff7e7;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -231,7 +256,7 @@ background-color: transparent;
           <item>
            <widget class="QLabel" name="version">
             <property name="text">
-             <string>v1.1.2</string>
+             <string>v1.4.7</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -640,8 +665,378 @@ background-color: transparent;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>3</number>
+          <number>1</number>
          </property>
+         <widget class="QWidget" name="login_page">
+          <widget class="QFrame" name="login_input">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>96</y>
+             <width>411</width>
+             <height>231</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>371</width>
+              <height>191</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="login_container">
+             <property name="verticalSpacing">
+              <number>20</number>
+             </property>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="signup_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Sign Up</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="QLineEdit" name="password_input">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="placeholderText">
+                <string>Insert your password</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="login_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Login</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="QLineEdit" name="user_id_input">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="placeholderText">
+                <string>Insert your user ID</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="login_background">
+           <property name="geometry">
+            <rect>
+             <x>52</x>
+             <y>98</y>
+             <width>485</width>
+             <height>457</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/login.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <zorder>login_background</zorder>
+          <zorder>login_input</zorder>
+         </widget>
+         <widget class="QWidget" name="signup_page">
+          <widget class="QLabel" name="signup_background">
+           <property name="geometry">
+            <rect>
+             <x>504</x>
+             <y>70</y>
+             <width>537</width>
+             <height>503</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/signup.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QFrame" name="singup_frame">
+           <property name="geometry">
+            <rect>
+             <x>56</x>
+             <y>78</y>
+             <width>427</width>
+             <height>453</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>14</x>
+              <y>12</y>
+              <width>401</width>
+              <height>423</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="signup_container" stretch="0,0,0,0">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="signup_title">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Create Your Account</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="signup_guide">
+               <property name="text">
+                <string>Insert the necessary information to create your account</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="signup_line1">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="signup_inputs">
+               <property name="topMargin">
+                <number>15</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="horizontalSpacing">
+                <number>15</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>30</number>
+               </property>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="signup_email">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Email</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLineEdit" name="signup_name">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLineEdit" name="signup_username">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Username</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="signup_password">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Password</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="signup_advisor_email">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Advisor Email</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLineEdit" name="signup_advisor_name">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Advisor Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="signup_id">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>ID</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="signup_reset">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Reset</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QPushButton" name="signup_create_account">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Sign Up</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="signup_lastname">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Lastname</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
          <widget class="QWidget" name="dashboard_page">
           <widget class="QFrame" name="user_sum">
            <property name="geometry">
@@ -807,8 +1202,8 @@ background-color: transparent;
              <property name="verticalSpacing">
               <number>10</number>
              </property>
-             <item row="6" column="2">
-              <widget class="QLabel" name="sum_core_rem">
+             <item row="6" column="1">
+              <widget class="QLabel" name="sum_core_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -816,15 +1211,15 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>5</string>
+                <string>10</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLabel" name="sum_selective_com">
+             <item row="4" column="0">
+              <widget class="QLabel" name="user_sum_concentration_7">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -832,10 +1227,92 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>2</string>
+                <string>General</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="user_sum_major_11">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="4">
+              <widget class="Line" name="line_11">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="2">
+              <widget class="QLabel" name="sum_concent_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>1</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="user_sum_major_12">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Completed</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="sum_general_cre">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>45</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="4">
+              <widget class="Line" name="line_18">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="4">
+              <widget class="QLabel" name="user_sum_fullname_5">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Course Categories Summary</string>
                </property>
               </widget>
              </item>
@@ -855,13 +1332,19 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="0" column="0" colspan="4">
-              <widget class="QLabel" name="user_sum_fullname_5">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
+             <item row="6" column="2">
+              <widget class="QLabel" name="sum_core_rem">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
                </property>
                <property name="text">
-                <string>Course Categories Summary</string>
+                <string>5</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -897,23 +1380,7 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="8" column="2">
-              <widget class="QLabel" name="sum_selective_rem">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>0</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="0">
+             <item row="8" column="0">
               <widget class="QLabel" name="user_sum_concentration_10">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -933,8 +1400,8 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_7">
+             <item row="8" column="1">
+              <widget class="QLabel" name="sum_concent_com">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -942,95 +1409,7 @@ background-color: transparent;
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>General</string>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="2">
-              <widget class="QLabel" name="sum_concent_rem">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>1</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0" colspan="4">
-              <widget class="Line" name="line_11">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="user_sum_major_11">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Category</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
-              <widget class="QLabel" name="sum_general_cre">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>45</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="0" colspan="4">
-              <widget class="Line" name="line_18">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="user_sum_major_12">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Completed</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="1">
-              <widget class="QLabel" name="sum_core_com">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>10</string>
+                <string>2</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -1053,58 +1432,6 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="10" column="1">
-              <widget class="QLabel" name="sum_concent_com">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>2</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="0" colspan="4">
-              <widget class="Line" name="line_12">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="3">
-              <widget class="QLabel" name="sum_concent_cre">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>6</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="user_sum_concentration_9">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Selective</string>
-               </property>
-              </widget>
-             </item>
              <item row="2" column="2">
               <widget class="QLabel" name="user_sum_major_22">
                <property name="sizePolicy">
@@ -1122,7 +1449,7 @@ background-color: transparent;
               </widget>
              </item>
              <item row="8" column="3">
-              <widget class="QLabel" name="sum_selective_cre">
+              <widget class="QLabel" name="sum_concent_cre">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                  <horstretch>0</horstretch>
@@ -1137,6 +1464,13 @@ background-color: transparent;
                </property>
               </widget>
              </item>
+             <item row="1" column="0" colspan="4">
+              <widget class="Line" name="line_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
              <item row="6" column="0">
               <widget class="QLabel" name="user_sum_concentration_8">
                <property name="sizePolicy">
@@ -1147,13 +1481,6 @@ background-color: transparent;
                </property>
                <property name="text">
                 <string>Core</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0" colspan="4">
-              <widget class="Line" name="line_8">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
@@ -1573,33 +1900,23 @@ background-color: transparent;
              <property name="verticalSpacing">
               <number>10</number>
              </property>
-             <item row="0" column="0" colspan="2">
-              <widget class="QLabel" name="user_sum_fullname_7">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Current Degree Plan</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QLabel" name="dp_courses">
+             <item row="3" column="0">
+              <widget class="QLabel" name="user_sum_concentration_15">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
                <property name="text">
-                <string>40 Courses</string>
+                <string>Concentration:</string>
                </property>
               </widget>
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="user_sum_major_27">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
@@ -1610,68 +1927,9 @@ background-color: transparent;
               </widget>
              </item>
              <item row="4" column="0">
-              <widget class="QLabel" name="user_sum_concentration_11">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Courses:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="dp_major">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Information Technology</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0" colspan="2">
-              <widget class="Line" name="line_9">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0">
-              <widget class="QLabel" name="user_sum_concentration_12">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>Credits:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="1">
-              <widget class="QLabel" name="dp_credits">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="text">
-                <string>120 Credits</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
               <widget class="QLabel" name="user_sum_major_28">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
@@ -1681,16 +1939,111 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="3" column="1">
+             <item row="2" column="1" colspan="3">
+              <widget class="QLabel" name="dp_major">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Information Technology</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" rowspan="2">
+              <widget class="QLabel" name="user_sum_concentration_11">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Courses:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="4">
+              <widget class="QLabel" name="user_sum_fullname_7">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Current Degree Plan</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1" colspan="3">
+              <widget class="QLabel" name="dp_conc">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Software Engineering</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1" colspan="3">
               <widget class="QLabel" name="dp_year">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
                <property name="text">
                 <string>2018</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="4">
+              <widget class="Line" name="line_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="user_sum_concentration_12">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Credits:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1" rowspan="2" colspan="3">
+              <widget class="QLabel" name="dp_courses">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>40 Courses</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1" colspan="3">
+              <widget class="QLabel" name="dp_credits">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>120 Credits</string>
                </property>
               </widget>
              </item>
@@ -2025,86 +2378,6 @@ background-color: transparent;
                <property name="verticalSpacing">
                 <number>30</number>
                </property>
-               <item row="0" column="1">
-                <widget class="QLineEdit" name="config_degreeplan_year">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Year</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="0">
-                <widget class="QLineEdit" name="config_degreeplan_concentration">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Concentration</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLineEdit" name="config_degreeplan_major">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Major</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="0">
-                <widget class="QLineEdit" name="config_degreeplan_general">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>General Credits</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="1">
-                <widget class="QLineEdit" name="config_degreeplan_core">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Core Credits</string>
-                 </property>
-                </widget>
-               </item>
                <item row="3" column="1">
                 <widget class="QLineEdit" name="config_degreeplan_concentration_credit">
                  <property name="sizePolicy">
@@ -2121,8 +2394,8 @@ background-color: transparent;
                  </property>
                 </widget>
                </item>
-               <item row="3" column="0">
-                <widget class="QLineEdit" name="config_degreeplan_selective">
+               <item row="4" column="1">
+                <widget class="QPushButton" name="config_degreeplan_save">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                    <horstretch>0</horstretch>
@@ -2130,26 +2403,7 @@ background-color: transparent;
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Selective Credits</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="config_degreeplan_credit">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Total Credits</string>
+                  <string>Save</string>
                  </property>
                 </widget>
                </item>
@@ -2166,8 +2420,8 @@ background-color: transparent;
                  </property>
                 </widget>
                </item>
-               <item row="4" column="1">
-                <widget class="QPushButton" name="config_degreeplan_save">
+               <item row="3" column="0">
+                <widget class="QLineEdit" name="config_degreeplan_core">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                    <horstretch>0</horstretch>
@@ -2175,7 +2429,90 @@ background-color: transparent;
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>Save</string>
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Core Credits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="config_degreeplan_general">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>General Credits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLineEdit" name="config_degreeplan_credit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Total Credits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="config_degreeplan_concentration">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Concentration</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="config_degreeplan_year">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Year</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" colspan="2">
+                <widget class="QLineEdit" name="config_degreeplan_major">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Major</string>
                  </property>
                 </widget>
                </item>
@@ -2408,7 +2745,7 @@ background-color: transparent;
               <height>311</height>
              </rect>
             </property>
-            <layout class="QGridLayout" name="course_modify_container" rowstretch="2,0,2,0,10" columnstretch="14,0,3,3,3">
+            <layout class="QGridLayout" name="course_modify_container" rowstretch="2,0,2,0,10" columnstretch="15,5,0,5,5,5">
              <property name="leftMargin">
               <number>10</number>
              </property>
@@ -2422,56 +2759,19 @@ background-color: transparent;
               <number>5</number>
              </property>
              <property name="horizontalSpacing">
-              <number>30</number>
+              <number>15</number>
              </property>
              <property name="verticalSpacing">
               <number>10</number>
              </property>
-             <item row="0" column="2" colspan="3">
-              <widget class="QLabel" name="course_modify_subtitle">
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string>Double click on a cell to modify or select to delete a course</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLineEdit" name="course_modify_search">
+             <item row="4" column="0" colspan="6">
+              <widget class="QTableWidget" name="course_modify_table">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="placeholderText">
-                <string>Insert a value to search</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QLabel" name="course_modify_title">
-               <property name="styleSheet">
-                <string notr="true">font-size: 18px;</string>
-               </property>
-               <property name="text">
-                <string>Edit/Delete Courses</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0" colspan="5">
-              <widget class="Line" name="line_21">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0" colspan="5">
-              <widget class="QTableWidget" name="course_modify_table">
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -2487,6 +2787,12 @@ background-color: transparent;
                <property name="editTriggers">
                 <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
                </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
                <property name="showGrid">
                 <bool>true</bool>
                </property>
@@ -2499,8 +2805,14 @@ background-color: transparent;
                <attribute name="horizontalHeaderVisible">
                 <bool>false</bool>
                </attribute>
+               <attribute name="horizontalHeaderCascadingSectionResizes">
+                <bool>false</bool>
+               </attribute>
                <attribute name="horizontalHeaderDefaultSectionSize">
                 <number>155</number>
+               </attribute>
+               <attribute name="horizontalHeaderHighlightSections">
+                <bool>true</bool>
                </attribute>
                <attribute name="horizontalHeaderStretchLastSection">
                 <bool>true</bool>
@@ -2508,14 +2820,17 @@ background-color: transparent;
                <attribute name="verticalHeaderVisible">
                 <bool>false</bool>
                </attribute>
-               <attribute name="verticalHeaderMinimumSectionSize">
-                <number>30</number>
+               <attribute name="verticalHeaderCascadingSectionResizes">
+                <bool>false</bool>
                </attribute>
                <attribute name="verticalHeaderDefaultSectionSize">
                 <number>35</number>
                </attribute>
                <attribute name="verticalHeaderHighlightSections">
                 <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderMinimumSectionSize">
+                <number>30</number>
                </attribute>
                <attribute name="verticalHeaderStretchLastSection">
                 <bool>true</bool>
@@ -2587,7 +2902,7 @@ background-color: transparent;
                </column>
                <column>
                 <property name="text">
-                 <string>Grade</string>
+                 <string>Credits</string>
                 </property>
                </column>
                <column>
@@ -2597,7 +2912,7 @@ background-color: transparent;
                </column>
                <column>
                 <property name="text">
-                 <string>Credits</string>
+                 <string>Grade</string>
                 </property>
                </column>
                <item row="0" column="0">
@@ -2638,7 +2953,7 @@ background-color: transparent;
                </item>
               </widget>
              </item>
-             <item row="2" column="2">
+             <item row="2" column="3">
               <widget class="QPushButton" name="course_modify_reset">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2651,7 +2966,7 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="2" column="4">
+             <item row="2" column="5">
               <widget class="QPushButton" name="course_modify_save">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2664,7 +2979,43 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="2" column="3">
+             <item row="2" column="0">
+              <widget class="QLineEdit" name="course_modify_search">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Insert an ID to search for</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" colspan="3">
+              <widget class="QLabel" name="course_modify_subtitle">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Double click on a cell to modify or select to delete a course</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="6">
+              <widget class="Line" name="line_21">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
               <widget class="QPushButton" name="course_modify_delete">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2677,24 +3028,47 @@ background-color: transparent;
                </property>
               </widget>
              </item>
-             <item row="1" column="0">
-              <widget class="Line" name="line_4">
+             <item row="1" column="3" colspan="3">
+              <widget class="Line" name="line_14">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item row="0" column="1" rowspan="3">
+             <item row="0" column="2" rowspan="3">
               <widget class="Line" name="line_3">
                <property name="orientation">
                 <enum>Qt::Vertical</enum>
                </property>
               </widget>
              </item>
-             <item row="1" column="2" colspan="3">
-              <widget class="Line" name="line_14">
+             <item row="0" column="0" colspan="2">
+              <widget class="QLabel" name="course_modify_title">
+               <property name="styleSheet">
+                <string notr="true">font-size: 18px;</string>
+               </property>
+               <property name="text">
+                <string>Edit/Delete Courses</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_4">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="course_search_button">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Search</string>
                </property>
               </widget>
              </item>
@@ -3280,6 +3654,544 @@ background-color: transparent;
    </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>user_id_input</tabstop>
+  <tabstop>password_input</tabstop>
+  <tabstop>login_button</tabstop>
+  <tabstop>signup_button</tabstop>
+  <tabstop>signup_name</tabstop>
+  <tabstop>signup_lastname</tabstop>
+  <tabstop>signup_email</tabstop>
+  <tabstop>signup_id</tabstop>
+  <tabstop>signup_username</tabstop>
+  <tabstop>signup_password</tabstop>
+  <tabstop>signup_advisor_name</tabstop>
+  <tabstop>signup_advisor_email</tabstop>
+  <tabstop>signup_reset</tabstop>
+  <tabstop>signup_create_account</tabstop>
+  <tabstop>config_account_reset</tabstop>
+  <tabstop>config_account_username</tabstop>
+  <tabstop>config_account_password</tabstop>
+  <tabstop>config_account_advisor_email</tabstop>
+  <tabstop>config_account_advisor_name</tabstop>
+  <tabstop>config_account_id</tabstop>
+  <tabstop>course_input_ID</tabstop>
+  <tabstop>course_input_name</tabstop>
+  <tabstop>course_input_category</tabstop>
+  <tabstop>course_input_grade</tabstop>
+  <tabstop>course_input_taken_status</tabstop>
+  <tabstop>course_input_credits</tabstop>
+  <tabstop>course_input_save</tabstop>
+  <tabstop>course_input_reset</tabstop>
+  <tabstop>course_modify_search</tabstop>
+  <tabstop>course_modify_reset</tabstop>
+  <tabstop>course_modify_delete</tabstop>
+  <tabstop>course_modify_save</tabstop>
+  <tabstop>dashboard</tabstop>
+  <tabstop>degreeplan</tabstop>
+  <tabstop>courses</tabstop>
+  <tabstop>account</tabstop>
+  <tabstop>logout</tabstop>
+  <tabstop>account_page_credential_reveal</tabstop>
+  <tabstop>config_account_name</tabstop>
+  <tabstop>config_account_lastname</tabstop>
+  <tabstop>config_degreeplan_credit</tabstop>
+  <tabstop>config_degreeplan_year</tabstop>
+  <tabstop>config_degreeplan_concentration</tabstop>
+  <tabstop>config_degreeplan_concentration_credit</tabstop>
+  <tabstop>config_degreeplan_major</tabstop>
+  <tabstop>config_degreeplan_general</tabstop>
+  <tabstop>config_degreeplan_save</tabstop>
+  <tabstop>minimizeBtn</tabstop>
+  <tabstop>closeBtn</tabstop>
+  <tabstop>config_account_save</tabstop>
+  <tabstop>config_degreeplan_reset</tabstop>
+  <tabstop>config_account_email</tabstop>
+  <tabstop>course_modify_table</tabstop>
+  <tabstop>config_degreeplan_core</tabstop>
+  <tabstop>course_search_button</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_ID</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_modify_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_modify_search</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>811</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_username</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_advisor_name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_email</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_password</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1040</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_lastname</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1040</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_id</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1040</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_account_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_account_advisor_email</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1040</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_credit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>791</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_core</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>791</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_concentration</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1037</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_year</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>791</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_major</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>914</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_concentration_credit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1037</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>config_degreeplan_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>config_degreeplan_general</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>791</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1037</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_grade</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_category</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_taken_status</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_input_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>course_input_credits</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1092</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_advisor_email</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_lastname</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_email</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_id</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_username</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_password</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup_reset</sender>
+   <signal>clicked()</signal>
+   <receiver>signup_advisor_name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
