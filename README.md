@@ -48,11 +48,11 @@ ___
 ### Dashboard  
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/dashboard.PNG"/>  
 
-### Courses Portal  
-<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/> 
-
 ### Degree Plan Portal  
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/degreeplan.PNG"/>  
+
+### Courses Portal  
+<img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/courses.PNG"/> 
 
 ### Account Portal  
 <img width="800" src="https://raw.githubusercontent.com/rhmtazad/uniprog/main/screenshots/account.PNG"/>   
