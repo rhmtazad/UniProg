@@ -7,7 +7,7 @@
 [![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 [![forks - uniprog](https://img.shields.io/github/forks/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
 
-### A GUI Tool Kit for Students to Manage their Degree Plan and Courses
+<h2 align='center'> A GUI Tool Kit for Students to Manage their Degree Plan and Courses </h2>
 
 ___  
 
