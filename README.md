@@ -1,6 +1,7 @@
-## UniProg v1.4.7
+<h1 align='center'> UniProg v1.4.7 </h1>
 
 [![Software Engineering - Scrum Project](https://img.shields.io/badge/Software_Engineering-Scrum_Project-important)](https://github.com/rhmtazad/UniProg/) 
+[![Supervisor - Mr. Ali Rahman Shinwari](https://img.shields.io/badge/Supervisor-Mr._Ali_Rahman_Shinwari-2ea44f)](https://) 
 [![Made with Python](https://img.shields.io/badge/Python<=3.7-blue?logo=python&logoColor=white)](https://python.org) 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 [![stars - uniprog](https://img.shields.io/github/stars/rhmtazad/uniprog?style=social)](https://github.com/rhmtazad/uniprog) 
