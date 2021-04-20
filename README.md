@@ -13,6 +13,7 @@ ___
 This project was originally developed for our Software Engineering course.
 The intention of this project was to practice the software development life-cycle, software development 
 practices, and different-but-related methodologies.  
+
 The Scrum model suggests that projects progress via a series of sprints.  
 In keeping with an agile methodology, sprints are timeboxed to 
 no more than a month long, most commonly two weeks.
