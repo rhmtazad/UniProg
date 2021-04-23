@@ -64,8 +64,8 @@ ___
 
 - [Python] - Version 3.7 or other compatible versions
 - [PyQt5]  - Version 5.15.2 of this framework for running the GUI
-- [pandas] - Version 1.2.4 of pandas library for managing CSV files
-- [numpy]  - Version 1.20.2 of numpy which comes with pandas standard library
+- [Pandas] - Version 1.2.4 of pandas library for managing CSV files
+- [Numpy]  - Version 1.20.2 of numpy which comes with pandas standard library
 
 ## Installation
 
