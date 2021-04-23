@@ -107,7 +107,7 @@ Now, you must intall the requirements
 $ pip install -r requirements.txt
 ```
 
-To use the run the app, you can either double click on the main.py file  
+To run the app, you can either double click on the main.py file  
 or you can run the following line of code
 
 ```
