@@ -61,23 +61,15 @@ ___
 ## Requirements
 
 **To use this software you must have installed:**
-- Python==3.7
-- click==7.1.2
-- numpy==1.20.2
-- pandas==1.2.4
-- PyQt5==5.15.2
-- pyqt5-plugins==5.15.2.2.1.0
-- PyQt5-Qt5==5.15.2
-- PyQt5-sip==12.8.1
-- pyqt5-tools==5.15.2.3.0.2
-- python-dateutil==2.8.1
-- python-dotenv==0.17.0
-- pytz==2021.1
-- qt5-applications==5.15.2.2.1
-- qt5-tools==5.15.2.1.0.1
-- six==1.15.0
+
+- [Python] - Version 3.7 or other compatible versions
+- [PyQt5]  - Version 5.15.2 of this framework for running the GUI
+- [pandas] - Version 1.2.4 of pandas library for managing CSV files
+- [numpy]  - Version 1.20.2 of numpy which comes with pandas standard library
 
 ## Installation
+
+**To install the requirements and use the software, do the following:**
 
 If you're using Debian Buster+:
 
@@ -94,7 +86,7 @@ $ sudo dnf install pipenv
 Or, if you're using FreeBSD:
 
 ```
-# pkg install py36-pipenv
+# pkg install py37-pipenv
 ```
 
 When none of the above is an option, it is recommended to use Pipx:
@@ -106,20 +98,20 @@ $ pipx install pipenv
 Then, set the current directory to the project directory
 
 ```
-cd UniProg
+$ cd UniProg
 ```
 
 Now, you must intall the requirements
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 To use the run the app, you can either double click on the main.py file  
 or you can run the following line of code
 
 ```
-python main.py
+$ python main.py
 ```
 
 
@@ -136,4 +128,5 @@ Any contributions you make are greatly appreciated.
 
 ## License
 
+GNU General Public License (GPL-3.0)  
 Distributed under the GPL-3.0 License which means you can use or distribute it however you want.
