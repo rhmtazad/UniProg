@@ -11,9 +11,9 @@
 
 ___  
 
-This project was originally developed for our Software Engineering course.
-The intention of this project was to practice the software development life-cycle, software development 
-practices, and different-but-related methodologies.  
+This project was originally developed for our Software Engineering course. 
+The intention of this project was to practice the software development life-cycle, 
+software development practices, and different-but-related methodologies.  
 
 The Scrum model suggests that projects progress via a series of sprints.  
 In keeping with an agile methodology, sprints are timeboxed to 
@@ -79,15 +79,54 @@ ___
 
 ## Installation
 
-**After finishing this project a single-executable file will be released**
+If you're using Debian Buster+:
 
 ```
-This part is intentionally left blank...
+$ sudo apt install pipenv
 ```
+
+Or, if you're using Fedora:
+
+```
+$ sudo dnf install pipenv
+```
+
+Or, if you're using FreeBSD:
+
+```
+# pkg install py36-pipenv
+```
+
+When none of the above is an option, it is recommended to use Pipx:
+
+```
+$ pipx install pipenv
+```
+
+Then, set the current directory to the project directory
+
+```
+cd UniProg
+```
+
+Now, you must intall the requirements
+
+```
+pip install -r requirements.txt
+```
+
+To use the run the app, you can either double click on the main.py file  
+or you can run the following line of code
+
+```
+python main.py
+```
+
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create.  
+Any contributions you make are greatly appreciated.
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/NewFeatures)
