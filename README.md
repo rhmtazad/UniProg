@@ -101,7 +101,7 @@ Then, set the current directory to the project directory
 $ cd UniProg
 ```
 
-Now, you can intall the requirements
+Now, you can install the requirements
 
 ```
 $ pip install -r requirements.txt
