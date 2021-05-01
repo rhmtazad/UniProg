@@ -128,4 +128,4 @@ Any contributions you make are greatly appreciated.
 ## License
 
 GNU General Public License (GPL-3.0)  
-Distributed under the GPL-3.0 License which means you can use or distribute it however you want.
+Distributed under the GPL-3.0 License meaning that you can use or distribute it however you want.
