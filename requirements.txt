@@ -1,5 +1,5 @@
 click==7.1.2
-numpy==1.20.2
+numpy==1.22.0
 pandas==1.2.4
 PyQt5==5.15.2
 pyqt5-plugins==5.15.2.2.1.0
